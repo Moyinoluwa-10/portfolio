@@ -1,0 +1,38 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: #ccc;
+}
+
+.navbar h1 {
+    font-size: 25px;
+    color: #0f0f0f;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar ul .nav-link {
+    text-decoration: none;
+    color: #111;
+}
+
+.navbar ul .nav-link::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #031D44;
+    width: 0%;
+    bottom: 10px;
+}
+
+.navbar ul .nav-link:hover::before {
+    width: 100%;
+}
