@@ -24,9 +24,9 @@
 }
 
 .navbar ul .nav-link::before {
+    content: "";
     transition: 300ms;
     height: 5px;
-    content: "";
     position: absolute;
     background-color: #031D44;
     width: 0%;
