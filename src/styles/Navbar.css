@@ -21,18 +21,30 @@
 .navbar ul .nav-link {
     text-decoration: none;
     color: #111;
+    position: relative;
+    text-transform: uppercase;
+    opacity: 0.85; 
+}
+
+.navbar ul .nav-link:hover {
+    opacity: 1;
 }
 
 .navbar ul .nav-link::before {
     content: "";
-    transition: 300ms;
-    height: 5px;
+    transition: all 0.3s ease;
+    height: 2px;
+    border-radius: 5%;
     position: absolute;
     background-color: #031D44;
-    width: 0%;
-    bottom: 10px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: top center;
+    left: 0;
+    bottom: -5px;
 }
 
 .navbar ul .nav-link:hover::before {
-    width: 100%;
+    transform: scaleX(1);
 }
+

@@ -1,0 +1,14 @@
+.edu {
+    background-color: #8080ff;
+    padding: 40px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 28px;
+    box-shadow: 2px 2px 0 2px lightgray;
+}
+
+.edu .top {
+    font-size: 20px;
+    color: #000019;
+    font-weight: 700;
+}
