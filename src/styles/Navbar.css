@@ -10,45 +10,42 @@
     color: #0f0f0f;
 }
 
-.navbar ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap: 30px;
+.hamburger {
+    display: none;
+    cursor: pointer;
+    margin-right: 10px;
+    z-index: 7;
 }
 
-.navbar ul .nav-link {
-    text-decoration: none;
-    color: #000;
-    position: relative;
-    text-transform: uppercase;
-    opacity: 0.7;
-    font-size: 14px; 
+.bar {
+    display: block;
+    width: 26px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: transform 0.15s ease;
+    transition: transform 0.15s ease;
+    background-color: #12122c;
+    border-radius: 4px;
 }
 
-.navbar ul .nav-link.active {
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
     opacity: 1;
-    font-weight: 700;
+    transform: translateY(8px) rotate(135deg);
 }
 
-.navbar ul .nav-link:hover {
+.hamburger.active .bar:nth-child(3) {
     opacity: 1;
+    transform: translateY(-8px) rotate(-135deg);
 }
 
-.navbar ul .nav-link::before {
-    content: "";
-    transition: all 0.3s ease;
-    height: 2px;
-    border-radius: 5%;
-    position: absolute;
-    background-color: #07102C;
-    width: 100%;
-    transform: scaleX(0);
-    transform-origin: top center;
-    left: 0;
-    bottom: -5px;
-}
 
-.navbar ul .nav-link:hover::before {
-    transform: scaleX(1);
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }   
 }

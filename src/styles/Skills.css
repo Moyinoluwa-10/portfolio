@@ -23,3 +23,13 @@
     justify-content: center;
     row-gap: 25px;
 }
+
+@media screen and (max-width: 768px) {
+    .skills-heading h1 {
+        font-size: 25px;
+    }
+
+    .skills-set {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

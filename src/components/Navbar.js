@@ -1,7 +1,30 @@
-import React from 'react'
+import React, { useState} from 'react'
 import '../styles/Navbar.css'
+import Navigation from './Navigation'
+import Navigations from './Navigations'
 
 const Navbar = () => {
+
+  // const hamburger = document.querySelector('.hamburger');
+  // const nav = document.querySelector('.nav');
+    // hamburger.addEventListener("click", () => {
+    //   hamburger.classList.toggle("active");
+    //   nav.classList.toggle("active");
+    // })
+
+  // document.querySelectorAll("nav_list").forEach(n => n.addEventListener("click", () => {
+  //   hamburger.classList.remove("active");
+  //   nav.classList.remove("active");
+  // }))
+
+  const [open, setOpen] = useState(false)
+
+  let menu;
+
+  if (open) {
+    menu = <Navigations />
+  }
+
   return (
     <>
     
@@ -9,15 +32,19 @@ const Navbar = () => {
 
             <div className='name-tag'><h1>Moyinoluwa Adelowo</h1></div>
 
-            <nav>
-                <ul>
-                    <li><a href='#home' className='nav-link active'>Home</a></li>
-                    <li><a href='#about' className='nav-link'>About Me</a></li>
-                    <li><a href='#contact' className='nav-link'>Contact</a></li>
-                    <li><a href='#project' className='nav-link'>Projects</a></li>
-                </ul>
-            </nav> 
+            <Navigation />
+
+            {menu}
+
+            <div className="hamburger" onClick={() => {
+              setOpen(!open);
+              }}>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+            </div>
         
+
         </div>
     
     </>
