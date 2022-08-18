@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 50px;
-    background-color: #ccc;
 }
 
 .navbar h1 {
@@ -20,10 +19,16 @@
 
 .navbar ul .nav-link {
     text-decoration: none;
-    color: #111;
+    color: #000;
     position: relative;
     text-transform: uppercase;
-    opacity: 0.85; 
+    opacity: 0.7;
+    font-size: 14px; 
+}
+
+.navbar ul .nav-link.active {
+    opacity: 1;
+    font-weight: 700;
 }
 
 .navbar ul .nav-link:hover {
@@ -36,7 +41,7 @@
     height: 2px;
     border-radius: 5%;
     position: absolute;
-    background-color: #031D44;
+    background-color: #07102C;
     width: 100%;
     transform: scaleX(0);
     transform-origin: top center;
@@ -47,4 +52,3 @@
 .navbar ul .nav-link:hover::before {
     transform: scaleX(1);
 }
-

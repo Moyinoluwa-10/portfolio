@@ -1,32 +1,7 @@
-.footer .middle-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.footer .icons {
-    border: 1px solid black;
-    color: black;
-    border-radius: 50%;
-    padding: 6px 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.footer .icons:hover {
-    border: 1px solid blue;
-    color: blue;
-    transform: scale(1.05);
-}
-
 .footer {
-    background-color: #ccc;
-    padding: 50px 0;
-}
-
-.footer .bottom-container {
-    text-align: center;
+    background-color: #07102C;
+    color: white;
+    padding: 50px;
 }
 
 .footer .top-container {
@@ -37,11 +12,53 @@
 }
 
 .footer .top-container h2 {
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .footer .empty-container {
-    height: 3px;
-    background-color: black;
+    height: 1px;
+    background-color: white;
     width: 20%;
 }
+
+.footer .middle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.footer .icons {
+    border: 1px solid white;
+    color: white;
+    border-radius: 50%;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer .icons:hover {
+    border: 1px solid #2351DC;
+    color: #2351DC;
+    transform: scale(1.05);
+}
+
+.footer .middle-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.footer .contact-icon {
+    margin-right: 10px;
+}
+
+.footer .bottom-container {
+    text-align: center;
+    font-size: 14px;
+}
+
+

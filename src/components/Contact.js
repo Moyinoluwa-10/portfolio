@@ -3,7 +3,7 @@ import '../styles/Contact.css'
 
 const Contact = () => {
   return (
-    <div className='contact'>
+    <div className='contact' id='contact'>
 
         <form action="">
 
@@ -21,11 +21,11 @@ const Contact = () => {
             </div>
 
             <div className="form-control">
-                <textarea name="message" id="" cols="30" rows="5" required placeholder="Your Message..."></textarea>
+                <textarea name="message" id="" cols="30" rows="5" required placeholder="Message" style={{resize: 'none'}}></textarea>
             </div>
 
             <div className='form-control'>
-                <button type="submit">Send Message</button>
+                <button type="submit">Send</button>
             </div>
 
         </form>

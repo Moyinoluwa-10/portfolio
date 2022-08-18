@@ -1,5 +1,6 @@
 .edu {
-    background-color: #8080ff;
+    background-color: #1C41B0;
+    color: white;
     padding: 40px;
     border-radius: 5px;
     text-align: center;
@@ -9,6 +10,13 @@
 
 .edu .top {
     font-size: 20px;
-    color: #000019;
+    color: #eeeeee;
     font-weight: 700;
+    text-transform: uppercase;
+}
+
+.edu .bottom {
+    display: inline-block;
+    font-size: 15px;
+    margin-bottom: 10px;
 }

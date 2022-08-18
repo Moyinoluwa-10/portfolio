@@ -1,0 +1,38 @@
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: #eee;
+}
+
+.about-title {
+    padding-left: 50px;
+}
+
+.about-title p.top {
+    color: #2351DC;
+    margin-bottom: 3px;
+}
+
+.about-title h2 {
+    color: #2351DC;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.about-title h1.top {
+    margin-top: 0;
+    color: #222;
+}
+
+.about-title p.bottom {
+    color: #222;
+    font-weight: 600;
+    max-width: 400px;
+}
+
+.about img {
+    height: 500px;
+}

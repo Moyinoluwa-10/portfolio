@@ -1,1 +1,32 @@
+.skillset-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
+.skillset-icon {
+    background-color: #EDF1FC;
+    color: #2351DC;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 70%;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #EDF1FC;
+}
+
+.progress-bar-inner {
+    height: 10px;
+    background-color: #2351DC;
+}
