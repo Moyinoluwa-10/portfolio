@@ -1,21 +1,16 @@
-import './App.css';
-import About from './components/About';
-import Contact from './components/Contact';
-import Education from './components/Education';
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
-import Skills from './components/Skills';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import Projects from "./Pages/Projects/Projects";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <About />
-      <Education />
-      <Skills />
-      <Contact />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route exact path={"/"} element={<Home />} />
+        <Route exact path={"/projects"} element={<Projects />} />
+      </Routes>
+    </Router>
   );
 }
 
