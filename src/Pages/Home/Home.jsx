@@ -2,17 +2,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import "./Home.css";
-import About from "../../Components/About";
-import Contact from "../../Components/Contact";
-import Education from "../../Components/Education";
-import Footer from "../../Components/Footer";
-import Navbar from "../../Components/Navbar";
-import Skills from "../../Components/Skills";
+import About from "../../components/About";
+import Contact from "../../components/Contact";
+import Education from "../../components/Education";
+import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar";
+import Skills from "../../components/Skills";
 import { createContext, useState } from "react";
 import ReactSwitch from "react-switch";
 import { useEffect } from "react";
 import { useRef } from "react";
-import Preloader from "../../Components/Preloader/Preloader";
+import Preloader from "../../components/Preloader/Preloader";
 
 export const ThemeContext = createContext(null);
 
