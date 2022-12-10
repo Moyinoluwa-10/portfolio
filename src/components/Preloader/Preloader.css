@@ -7,7 +7,7 @@
   z-index: 200;
 }
 
-.preloader .preloader.active {
+.preloader.active {
   height: 0%;
   pointer-events: none;
 }
@@ -67,20 +67,21 @@
   stroke: 10px blue;
   animation: animateText 2s linear infinite;
   animation-direction: alternate;
-  font-family: "Zen Dots", cursive;
-  /* font-family: "Fugaz One", cursive; */
+  /* font-family: "Zen Dots", cursive; */
+  /* font-family: U8-Bold, sans-serif; */
+  font-family: "Fugaz One", cursive;
 }
 
 .preloader .text__m {
   position: relative;
-  bottom: 35px;
-  left: 27.5px;
+  bottom: 32px;
+  left: 26px;
 }
 
 .preloader .text__o {
   position: relative;
-  top: 35px;
-  right: 27.5px;
+  top: 32px;
+  right: 26px;
 }
 
 @keyframes animateText {

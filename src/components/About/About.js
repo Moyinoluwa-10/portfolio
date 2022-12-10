@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/About.css";
-import MyPic from "../assets/images/bg.jpg";
+import "./About.css";
+import MyPic from "../../assets/images/bg.jpg";
 import Typed from "typed.js";
 import Aos from "aos";
 import "aos/dist/aos.css";

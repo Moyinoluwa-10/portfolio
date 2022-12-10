@@ -18,7 +18,7 @@ const Preloader = () => {
       <div className="preloader__bottom" ref={preloaderBottom}></div>
       <div className="preloader__text" ref={preloaderText}>
         <h1 className="text text__m">M</h1>
-        <h1 className="text text__o">0</h1>
+        <h1 className="text text__o">A</h1>
       </div>
     </div>
   );
