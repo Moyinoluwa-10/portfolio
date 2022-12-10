@@ -1,0 +1,35 @@
+.skills{
+    padding: 50px;
+}
+
+.skills-heading {
+    margin-bottom: 40px;
+}
+
+.skills-heading h1 {
+    margin-bottom: 0px;
+}
+
+.skills-heading p {
+    color:#4D4D4D;
+    margin-top: 10px;
+}
+
+.skills-set {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .skills-heading h1 {
+        font-size: 25px;
+    }
+
+    .skills-set {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
