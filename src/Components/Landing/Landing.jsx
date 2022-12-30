@@ -36,45 +36,43 @@ const Landing = () => {
       <Navbar />
 
       <div className="landing-container">
-
-      <div className="landing-content">
-        <p className="landing__text">Hi There 👋</p>
-        <h2 className="landing__heading">
-          I am <span className="auto-type" ref={autoRef}></span>
-        </h2>
-      </div>
-
-      <div className="landing__footer">
-        <div>
-          <a
-            href="https://www.linkedin.com/in/moyinoluwa-adelowo-675565239/"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faLinkedin} className="icons" />
-          </a>
+        <div className="landing-content">
+          <p className="landing__text">Hi There 👋</p>
+          <h2 className="landing__heading">
+            I am <span className="auto-type" ref={autoRef}></span>
+          </h2>
         </div>
-        <div>
-          <a
-            href="https://twitter.com/AdelowoMoyin"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faTwitter} className="icons" />
-          </a>
-        </div>
-        <div>
-          <a
-            href="https://github.com/Moyinoluwa-10"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faGithub} className="icons" />
-          </a>
-        </div>
-      </div>
-      </div>
 
+        <div className="landing__footer">
+          <div>
+            <a
+              href="https://www.linkedin.com/in/moyinoluwa-adelowo-675565239/"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedin} className="icons" />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://twitter.com/AdelowoMoyin"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faTwitter} className="icons" />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://github.com/Moyinoluwa-10"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} className="icons" />
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,7 +1,11 @@
 #dark .contact {
-  background-color: #191c1f;
+  background-color: var(--dark-bg);
   color: white;
   padding: 100px 50px;
+}
+
+.contact {
+  background-color: var(--light-bg);
 }
 
 form {

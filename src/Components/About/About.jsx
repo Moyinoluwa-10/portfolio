@@ -26,7 +26,7 @@ const About = () => {
         </p>
       </div>
 
-      <div data-aos="fade-right" className="pic-box">
+      <div className="pic-box">
         <img src={MyPic} alt="Pictures" />
       </div>
     </div>

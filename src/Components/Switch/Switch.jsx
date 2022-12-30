@@ -14,8 +14,8 @@ const Switch = () => {
         onChange={toggleTheme}
         checked={theme === "dark"}
         className="react-switch"
-        boxShadow={false}
-        activeBoxShadow={false}
+        boxShadow="0px 0px 0px rgba(0, 0, 0, 0.0)"
+        activeBoxShadow="0px 0px 0px rgba(0, 0, 0, 0.0)"
         offColor="#fff"
         onColor="#000"
         offHandleColor="#000"

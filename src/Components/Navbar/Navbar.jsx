@@ -40,7 +40,7 @@ const Navbar = () => {
           </ul>
         </nav>
 
-        <div>
+        <div >
           <Switch />
         </div>
 

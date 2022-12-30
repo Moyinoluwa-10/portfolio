@@ -1,9 +1,10 @@
 .skills {
   padding: 50px;
+  background-color: var(--light-bg);
 }
 
 #dark .skills {
-  background-color: #191c1f;
+  background-color: var(--dark-bg);
 }
 
 .skills-heading {
