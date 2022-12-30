@@ -1,0 +1,162 @@
+.landing {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../../assets/images/landingbglight.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#dark .landing {
+  background-image: url(../../assets/images/landingbgdark.jpg);
+}
+
+.landing .landing-container {
+  padding: 0 50px;
+}
+
+.landing .landing-content {
+  margin: 120px 0px;
+}
+
+.landing .landing__text {
+  color: #000;
+  text-align: center;
+  font-size: 28px;
+  line-height: 35px;
+  margin-bottom: 30px;
+}
+
+#dark .landing .landing__text {
+  color: #fff;
+}
+
+.landing .landing__heading {
+  color: #000;
+  text-align: center;
+  font-size: 52px;
+  line-height: 70px;
+}
+
+#dark .landing .landing__heading {
+  color: #fff;
+}
+
+.landing .landing__heading span {
+  color: #2351dc;
+}
+
+.landing .landing__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.landing .icons {
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 50%;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 25px;
+  transition: all 0.3s ease;
+}
+
+#dark .landing .icons {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.landing .icons:hover {
+  border: 1px solid #333;
+  color: #333;
+  transform: scale(1.05);
+}
+
+#dark .landing .icons:hover {
+  border: 1px solid #ddd;
+  color: #ddd;
+}
+
+.typed-cursor {
+  opacity: 1;
+  animation: typedjsBlink 0.7s infinite;
+  -webkit-animation: typedjsBlink 0.7s infinite;
+}
+
+@keyframes typedjsBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes typedjsBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.typed-fade-out {
+  opacity: 0;
+  transition: opacity 0.25s;
+  -webkit-animation: 0;
+  animation: 0;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+  .landing .landing-container {
+    padding: 0 30px;
+  }
+
+  .landing .landing__text {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .landing .landing__heading {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .landing .icons {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .landing .landing-container {
+    padding: 0 30px;
+  }
+
+  .landing .landing__text {
+    font-size: 22px;
+    line-height: 28xpx;
+  }
+
+  .landing .landing__heading {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .landing .landing__footer {
+    gap: 20px;
+  }
+
+  .landing .icons {
+    font-size: 20px;
+  }
+}

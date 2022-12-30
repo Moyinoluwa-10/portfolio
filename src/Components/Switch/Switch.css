@@ -1,0 +1,15 @@
+.switch-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 18px;
+}
+
+.switch-icon--sun {
+  color: #000;
+}
+
+.switch-icon--moon {
+  color: #fff;
+}
