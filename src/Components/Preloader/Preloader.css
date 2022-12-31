@@ -16,7 +16,7 @@
   position: fixed;
   width: 100%;
   height: 50vh;
-  background-color: gray;
+  background-color: grey;
   top: 0;
   left: 0;
   transition: all 2s ease;
@@ -50,7 +50,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #fff;
   font-size: 100px;
   line-height: auto;
   transition: 1s;
@@ -64,8 +64,7 @@
 
 .preloader .text {
   -webkit-text-stroke: 1px blue;
-  stroke: 10px blue;
-  animation: animateText 2s linear infinite;
+  animation: animateText 1.5s linear infinite;
   animation-direction: alternate;
   /* font-family: "Zen Dots", cursive; */
   /* font-family: U8-Bold, sans-serif; */
@@ -85,13 +84,18 @@
 }
 
 @keyframes animateText {
+  0% {
+    -webkit-text-stroke: 1px blue;
+    color: #fff;
+  }
   50% {
-    -webkit-text-stroke: 1px rgb(0, 0, 146);
-    color: #111111;
+    -webkit-text-stroke: 1px rgb(0, 0, 141);
+    color: grey;
   }
 
   100% {
-    -webkit-text-stroke: 1px rgb(0, 0, 53);
+    -webkit-text-stroke: 1px rgb(1, 1, 64);
+    color: #000;
   }
 }
 

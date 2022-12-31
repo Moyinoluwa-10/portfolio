@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Home.css";
 
+import Preloader from "../../Components/Preloader/Preloader";
 import Landing from "../../Components/Landing/Landing";
 import About from "../../Components/About/About";
 import Skills from "../../Components/Skills/Skills";
@@ -8,7 +9,6 @@ import ProjectDemo from "../../Components/ProjectDemo/ProjectDemo";
 import Contact from "../../Components/Contact/Contact";
 import Footer from "../../Components/Footer/Footer";
 // import Education from "../../Components/Education";
-// import Preloader from "../../Components/Preloader/Preloader";
 
 import { ThemeContext } from "../../Context/ThemeContext.jsx";
 
@@ -29,13 +29,13 @@ const Home = () => {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div id={theme}>
+        <Preloader />
         <Landing />
         <About />
         <Skills />
         <ProjectDemo />
         <Contact />
         <Footer />
-        {/* <Preloader /> */}
         {/* <Education /> */}
       </div>
     </ThemeContext.Provider>
