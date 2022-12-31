@@ -14,7 +14,7 @@ const About = () => {
       </h1>
       <div className="about__wrapper">
         <div className="about__text-container">
-          <p className="about__text" data-aos="fade-down-left">
+          <p className="about__text" data-aos="fade-zoom-in">
             My name is Moyinoluwa Adelowo. I’m a full stack web developer. I use
             MERN (MongoDB, ExpressJS, React, NodeJS) stack web developement
             tools. Additionally, I have a solid knowledge and experience with

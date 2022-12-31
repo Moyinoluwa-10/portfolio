@@ -14,7 +14,12 @@ Aos.init({ duration: 1500 });
 
 const Footer = () => {
   return (
-    <div className="footer" data-aos="fade-up">
+    <div
+      className="footer"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-easing="ease"
+    >
       <div className="top-container">
         <div className="empty-container"></div>
         <div>
