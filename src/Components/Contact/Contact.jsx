@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import "./Contact.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+Aos.init({ duration: 1500 });
 
 const Contact = () => {
   const [name, setName] = useState();
@@ -16,8 +20,10 @@ const Contact = () => {
 
   return (
     <div className="contact" id="contact">
-      <h1 className="contact__heading">Contact Me</h1>
-      <form onSubmit={handleSubmit}>
+      <h1 className="contact__heading" data-aos="zoom-in">
+        Contact Me
+      </h1>
+      <form onSubmit={handleSubmit} data-aos="zoom-in">
         <div className="feedback-title">
           <p>Need a Service?</p>
           <h3>Send A Message</h3>

@@ -11,20 +11,28 @@ import {
   faSass,
 } from "@fortawesome/free-brands-svg-icons";
 import { SiMysql, SiMongodb } from "react-icons/si";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+Aos.init({ duration: 1500 });
 
 const Skills = () => {
   return (
     <div className="skills">
       <div className="skills__text-container">
         <div>
-          <h1 className="skills__heading">My Tools</h1>
+          <h1 className="skills__heading" data-aos="fade-down">
+            My Tools
+          </h1>
         </div>
         <div>
-          <p className="skills__text">Here are a few tools I use</p>
+          <p className="skills__text" data-aos="fade-up">
+            Here are a few tools I use
+          </p>
         </div>
       </div>
 
-      <div className="skills-set">
+      <div className="skills-set" data-aos="zoom-in">
         <Skillset iconName={faHtml5} iconTitle={"HTML"} />
         <Skillset iconName={faCss3} iconTitle={"CSS"} />
         <Skillset iconName={faJs} iconTitle={"Javascript"} />

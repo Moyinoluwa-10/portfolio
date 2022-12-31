@@ -1,16 +1,20 @@
 import React from "react";
 import "./About.css";
 import MyPic from "../../assets/images/profilepic.jpg";
-// import Aos from "aos";
-// import "aos/dist/aos.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+Aos.init({ duration: 1500 });
 
 const About = () => {
   return (
     <div className="about" id="about">
-      <h1 className="about__heading">About Me</h1>
+      <h1 className="about__heading" data-aos="flip-down">
+        About Me
+      </h1>
       <div className="about__wrapper">
         <div className="about__text-container">
-          <p className="about__text">
+          <p className="about__text" data-aos="fade-down-left">
             My name is Moyinoluwa Adelowo. I’m a full stack web developer. I use
             MERN (MongoDB, ExpressJS, React, NodeJS) stack web developement
             tools. Additionally, I have a solid knowledge and experience with
@@ -22,7 +26,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="about__image-container">
+        <div className="about__image-container" data-aos="fade-up-right">
           <img src={MyPic} alt="Display Pic" />
         </div>
       </div>
