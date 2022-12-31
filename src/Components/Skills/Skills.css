@@ -7,46 +7,91 @@
   background-color: var(--dark-bg);
 }
 
-.skills-heading {
+.skills .skills__heading {
+  font-size: 50px;
+  line-height: 65px;
+  text-align: center;
+  color: var(--slighty-black);
+  margin-bottom: 5px;
+}
+
+#dark .skills .skills__heading {
+  color: var(--slighty-white);
+}
+
+.skills .skills__text {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
   margin-bottom: 40px;
+  color: var(--black);
 }
 
-.skills-heading h1 {
-  margin-bottom: 0px;
+#dark .skills .skills__text {
+  color: var(--white);
 }
 
-#dark .skills-heading h1 {
-  margin-bottom: 0px;
-  color: #fff;
-}
-
-.skills-heading p {
-  color: #4d4d4d;
-  margin-top: 10px;
-}
-
-#dark .skills-heading p {
-  color: #fff;
-}
-
-.skills-set {
-  /* width: 100%; */
-  /* display: grid; */
-  /* grid-template-columns: repeat(2, 1fr); */
+.skills .skills-set {
+  display: flex;
   align-items: center;
   justify-content: center;
   row-gap: 25px;
-  display: flex;
   gap: 40px;
   flex-wrap: wrap;
 }
 
+.skills .icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skills .react-icons {
+  background-color: var(--dark-blue);
+  color: var(--very-light-blue);
+  font-size: 25px;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+
+#dark .skills .react-icons {
+  background-color: var(--very-light-blue);
+  color: var(--dark-blue);
+}
+
+.skills .icon-name {
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--black);
+}
+
+#dark .skills .icon-name {
+  color: var(--white);
+}
+
 @media screen and (max-width: 768px) {
-  .skills-heading h1 {
-    font-size: 25px;
+  .skills {
+    padding: 50px 30px;
+    background-color: var(--light-bg);
   }
 
-  .skills-set {
-    grid-template-columns: repeat(1, 1fr);
+  .skills .skills__heading {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 5px;
+  }
+
+  .skills .skills__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+
+  .skills .skills-set {
+    gap: 25px;
   }
 }

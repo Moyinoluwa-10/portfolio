@@ -20,7 +20,7 @@
 }
 
 .landing .landing__text {
-  color: #000;
+  color: var(--black);
   text-align: center;
   font-size: 28px;
   line-height: 35px;
@@ -28,22 +28,26 @@
 }
 
 #dark .landing .landing__text {
-  color: #fff;
+  color: var(--white);
 }
 
 .landing .landing__heading {
-  color: #000;
+  color: var(--black);
   text-align: center;
   font-size: 52px;
   line-height: 70px;
 }
 
 #dark .landing .landing__heading {
-  color: #fff;
+  color: var(--white);
 }
 
 .landing .landing__heading span {
-  color: #2351dc;
+  color: var(--medium-blue);
+}
+
+#dark .landing .landing__heading span {
+  color: var(--light-blue);
 }
 
 .landing .landing__footer {
@@ -54,8 +58,8 @@
 }
 
 .landing .icons {
-  border: 1px solid #000;
-  color: #000;
+  border: 1px solid var(--black);
+  color: var(--black);
   border-radius: 50%;
   padding: 10px 12px;
   cursor: pointer;
@@ -64,19 +68,19 @@
 }
 
 #dark .landing .icons {
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid var(--white);
+  color: var(--white);
 }
 
 .landing .icons:hover {
-  border: 1px solid #333;
-  color: #333;
+  border: 1px solid var(--medium-blue);
+  color: var(--medium-blue);
   transform: scale(1.05);
 }
 
 #dark .landing .icons:hover {
-  border: 1px solid #ddd;
-  color: #ddd;
+  border: 1px solid var(--light-blue);
+  color: var(--light-blue);
 }
 
 .typed-cursor {
@@ -122,11 +126,6 @@
     padding: 0 30px;
   }
 
-  .landing .landing__text {
-    font-size: 28px;
-    line-height: 35px;
-  }
-
   .landing .landing__heading {
     font-size: 40px;
     line-height: 45px;
@@ -144,7 +143,7 @@
 
   .landing .landing__text {
     font-size: 22px;
-    line-height: 28xpx;
+    line-height: 28px;
   }
 
   .landing .landing__heading {
@@ -154,9 +153,5 @@
 
   .landing .landing__footer {
     gap: 20px;
-  }
-
-  .landing .icons {
-    font-size: 20px;
   }
 }

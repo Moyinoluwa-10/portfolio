@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="empty-container"></div>
       </div>
 
-      <div className="middle-container">
+      <div className="middle-container1">
         <div>
           <a
             href="https://www.linkedin.com/in/moyinoluwa-adelowo-675565239/"
@@ -50,14 +50,14 @@ const Footer = () => {
       </div>
 
       <div className="middle-container2">
-        <div>
+        <a href="mailto:moyinadelowo@gmail.com" className="socials">
           <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />{" "}
           moyinadelowo@gmail.com
-        </div>
-        <div>
+        </a>
+        <a href="tel:08104553618" className="socials">
           <FontAwesomeIcon icon={faPhone} className="contact-icon" />{" "}
           08104553618
-        </div>
+        </a>
       </div>
 
       <div className="bottom-container">

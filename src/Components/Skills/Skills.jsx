@@ -10,16 +10,17 @@ import {
   faWordpress,
   faSass,
 } from "@fortawesome/free-brands-svg-icons";
+import { SiMysql, SiMongodb } from "react-icons/si";
 
 const Skills = () => {
   return (
     <div className="skills">
-      <div className="skills-heading">
+      <div className="skills__text-container">
         <div>
-          <h1>My Skills</h1>
+          <h1 className="skills__heading">My Tools</h1>
         </div>
         <div>
-          <p>Here are a few skills I possess</p>
+          <p className="skills__text">Here are a few tools I use</p>
         </div>
       </div>
 
@@ -32,6 +33,14 @@ const Skills = () => {
         <Skillset iconName={faWordpress} iconTitle={"Wordpress"} />
         <Skillset iconName={faSass} iconTitle={"Sass/SCSS"} />
         <Skillset iconName={faNodeJs} iconTitle={"NodeJs"} />
+        <div className="icon-container">
+          <SiMysql className="react-icons" />
+          <p className="icon-name">MySQL</p>
+        </div>
+        <div className="icon-container">
+          <SiMongodb className="react-icons" />
+          <p className="icon-name">MongoDB</p>
+        </div>
       </div>
     </div>
   );

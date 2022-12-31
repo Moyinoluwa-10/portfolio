@@ -1,124 +1,143 @@
+.contact {
+  padding: 100px 50px;
+  background-color: var(--light-bg);
+  color: var(--black);
+}
+
 #dark .contact {
   background-color: var(--dark-bg);
-  color: white;
-  padding: 100px 50px;
+  color: var(-var(--white));
 }
 
-.contact {
-  background-color: var(--light-bg);
+.contact .contact__heading {
+  font-size: 50px;
+  line-height: 65px;
+  text-align: center;
+  color: var(--slighty-black);
+  margin-bottom: 30px;
 }
 
-form {
-  width: 500px;
-  max-width: 100%;
-  /* background-color: #1c41b0; */
+#dark .contact .contact__heading {
+  color: var(--slighty-white);
+}
+
+.contact form {
+  width: 100%;
   padding: 40px 50px;
-  border-radius: 5px;
 }
 
-.feedback-title p {
+.contact .feedback-title p {
   font-size: 16px;
-  color: #000;
-  margin-bottom: 0px;
-}
-#dark .feedback-title p {
-  color: white;
-}
-.feedback-title h3 {
-  font-size: 23px;
-  color: #000;
-  margin: 5px 0 20px 0;
+  line-height: 24px;
+  color: var(--black);
+  margin-bottom: 5px;
 }
 
-#dark .feedback-title h3 {
-  font-size: 23px;
-  color: white;
-  margin: 5px 0 20px 0;
+#dark .contact .feedback-title p {
+  color: var(--white);
 }
 
-form .form-control {
+.contact .feedback-title h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+#dark .contact .feedback-title h3 {
+  color: var(--white);
+}
+
+.contact .form-control {
   padding: 10px 0;
 }
 
-form input {
+.contact .input,
+.contact .textarea {
   padding: 10px 20px;
   outline: none;
-  border: none;
-  border-bottom: 1px solid #000;
-  color: #000;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  color: var(--black);
   width: 100%;
   background-color: transparent;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: inherit;
 }
 
-#dark form input {
-  border-bottom: 1px solid white;
-  color: white;
+#dark .contact .input,
+#dark .contact .textarea {
+  border: 1px solid var(--white);
+  color: var(--white);
 }
 
-form ::placeholder {
-  font-size: 13px;
-  color: #000;
-  opacity: 0.7;
+.contact ::placeholder {
+  font-size: 15px;
+  color: var(--black);
+  opacity: 0.9;
+  font-family: inherit;
+  font-weight: 400;
 }
 
 #dark form ::placeholder {
-  color: white;
+  color: var(--white);
 }
 
-textarea {
-  padding: 10px 20px;
+.contact .textarea {
+  resize: none;
+  height: 250px;
+}
+
+.contact .btn {
+  padding: 15px 40px;
+  background-color: var(--dark-blue);
+  color: var(--very-light-blue);
+  border: none;
   outline: none;
-  border: none;
-  border-bottom: 1px solid #191c1f;
-  color: #000;
-  width: 100%;
-  background-color: transparent;
-}
-
-#dark textarea {
-  padding: 10px 20px;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid #191c1f;
-  color: white;
-  width: 100%;
-  background-color: transparent;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #000;
-  color: #fff;
-  border: none;
   font-weight: 700;
   border-radius: 5px;
-  transition: all 0.25s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
 }
 
-#dark button {
-  padding: 10px 20px;
-  background-color: white;
-  color: #1c41b0;
-  border: none;
-  font-weight: 700;
-  border-radius: 5px;
-  transition: all 0.25s ease;
-  cursor: pointer;
+#dark .contact .btn {
+  background-color: var(--very-light-blue);
+  color: var(--dark-blue);
 }
 
-button:hover {
-  color: white;
-  background-color: #1c41b0;
-  border: 1px solid white;
+.contact .btn:hover {
+  color: var(--dark-blue);
+  background-color: var(--very-light-blue);
+  border: 2px solid var(--dark-blue);
 }
 
-button:active {
-  transform: scale(0.92);
+#dark .contact .btn:hover {
+  color: var(--very-light-blue);
+  background-color: var(--dark-blue);
+  border: 2px solid var(--very-light-blue);
+}
+
+.contact .btn:active {
+  transform: scale(0.95);
 }
 
 @media screen and (max-width: 768px) {
-  form {
-    padding: 35px 30px;
+  .contact {
+    padding: 100px 30px;
+  }
+
+  .contact .contact__heading {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+
+  .contact form {
+    padding: 40px 0px;
   }
 }

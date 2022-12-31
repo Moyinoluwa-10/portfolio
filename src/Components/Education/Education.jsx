@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import "../styles/Education.css";
-import Edu from "./Edu";
+import "./Education.css";
+import Edu from "../Edu/Edu";
 import Aos from "aos";
 import "aos/dist/aos.css";
 

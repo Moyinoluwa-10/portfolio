@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 
 const Contact = () => {
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [message, setMessage] = useState();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Message Sent Successfully");
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
   return (
     <div className="contact" id="contact">
-      <form action="">
+      <h1 className="contact__heading">Contact Me</h1>
+      <form onSubmit={handleSubmit}>
         <div className="feedback-title">
           <p>Need a Service?</p>
           <h3>Send A Message</h3>
@@ -17,6 +30,9 @@ const Contact = () => {
             id=""
             required
             placeholder="Full Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="input"
           />
         </div>
 
@@ -27,6 +43,9 @@ const Contact = () => {
             id=""
             required
             placeholder="Email Address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="input"
           />
         </div>
 
@@ -38,12 +57,16 @@ const Contact = () => {
             rows="5"
             required
             placeholder="Message"
-            style={{ resize: "none" }}
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            className="textarea"
           ></textarea>
         </div>
 
         <div className="form-control">
-          <button type="submit">Send</button>
+          <button type="submit" className="btn">
+            Send
+          </button>
         </div>
       </form>
     </div>

@@ -1,10 +1,5 @@
 .about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-content: space-between;
-  gap: 50px;
-  padding: 100px 50px;
+  padding: 130px 50px;
   background-color: var(--light-bg);
 }
 
@@ -12,36 +7,46 @@
   background-color: var(--dark-bg);
 }
 
-.about-title h1 {
-  color: #222;
-  margin-bottom: 20px;
+.about .about__heading {
+  font-size: 50px;
+  line-height: 65px;
+  text-align: center;
+  color: var(--slighty-black);
+  margin-bottom: 100px;
 }
 
-#dark .about-title h1 {
-  color: #eee;
+#dark .about .about__heading {
+  color: var(--slighty-white);
 }
 
-.about-title p {
-  color: #222;
-  font-weight: 600;
+.about .about__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.about .about__text {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
   max-width: 400px;
 }
 
-#dark .about-title p {
-  color: #eee;
-  font-weight: 600;
+#dark .about .about__text {
+  color: var(--white);
   max-width: 400px;
 }
 
-.about .pic-box {
+.about .about__image-container {
   max-width: 500px;
   width: 100%;
   border-radius: 100%;
   overflow: hidden;
-  /* height: 500px; */
 }
 
-.about .pic-box img {
+.about .about__image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -49,28 +54,28 @@
 
 @media screen and (max-width: 768px) {
   .about {
+    padding: 130px 30px;
+  }
+
+  .about .about__wrapper {
     grid-template-columns: 1fr;
     text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 
-  .about-title {
-    padding-left: 20px;
+  .about .about__heading {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 30px;
   }
 
-  .about-title h2 {
-    font-size: 20px;
-  }
-
-  .about-title h1 {
-    font-size: 22px;
-  }
-
-  .about-title p.bottom {
+  .about .about__text {
+    max-width: 500px;
     margin: 0 auto;
-    font-size: 15px;
   }
 
-  .about img {
-    max-width: 90%;
+  .about .about__image-container {
+    margin: 0 auto;
   }
 }

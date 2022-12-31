@@ -3,9 +3,10 @@ import "./Home.css";
 
 import Landing from "../../Components/Landing/Landing";
 import About from "../../Components/About/About";
+import Skills from "../../Components/Skills/Skills";
+import ProjectDemo from "../../Components/ProjectDemo/ProjectDemo";
 import Contact from "../../Components/Contact/Contact";
 import Footer from "../../Components/Footer/Footer";
-import Skills from "../../Components/Skills/Skills";
 // import Education from "../../Components/Education";
 // import Preloader from "../../Components/Preloader/Preloader";
 
@@ -31,6 +32,7 @@ const Home = () => {
         <Landing />
         <About />
         <Skills />
+        <ProjectDemo />
         <Contact />
         <Footer />
         {/* <Preloader /> */}
