@@ -15,14 +15,14 @@ const About = () => {
       <div className="about__wrapper">
         <div className="about__text-container">
           <p className="about__text" data-aos="fade-zoom-in">
-            My name is Moyinoluwa Adelowo. I’m a full stack web developer. I use
-            MERN (MongoDB, ExpressJS, React, NodeJS) stack web developement
-            tools. Additionally, I have a solid knowledge and experience with
-            HTML, CSS, JavaScript, and REACT for frontend, NodeJS and it's
-            framework (ExpressJS) for backend. I'm experienced at developing
-            professional websites. I am a passionate and goal driven Techpreneur
-            whose interest is in using technology to build solutions to solve
-            real world problems.
+            My name is Moyinoluwa Adelowo. I’m a fullstack developer. I use MERN
+            (MongoDB, ExpressJS, React, NodeJS) stack web developement tools.
+            Additionally, I have a solid knowledge and experience with HTML,
+            CSS, JavaScript, and REACT for frontend, NodeJS and it's framework
+            (ExpressJS) for backend. I'm experienced at developing professional
+            websites. I am a passionate and goal driven Techpreneur whose
+            interest is in using technology to build solutions to solve real
+            world problems.
           </p>
         </div>
 

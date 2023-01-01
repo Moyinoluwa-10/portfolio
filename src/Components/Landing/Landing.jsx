@@ -15,7 +15,7 @@ const Landing = () => {
   const options = {
     strings: [
       "Moyinoluwa Adelowo",
-      "a Fullstack Web Developer",
+      "a Fullstack Developer",
       "a Software Engineer",
     ],
     typeSpeed: 50,

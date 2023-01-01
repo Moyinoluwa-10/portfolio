@@ -123,7 +123,7 @@
 /* RESPONSIVENESS */
 @media screen and (max-width: 768px) {
   .landing .landing-container {
-    margin: 150px 0px;
+    margin: 150px 0px 0px;
     padding: 0 30px;
   }
 
@@ -139,7 +139,7 @@
 
 @media screen and (max-width: 480px) {
   .landing .landing-container {
-    padding: 0 30px;
+    padding: 0 20px;
   }
 
   .landing .landing__text {
@@ -148,7 +148,7 @@
   }
 
   .landing .landing__heading {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 35px;
   }
 
