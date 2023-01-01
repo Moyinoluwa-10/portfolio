@@ -40,7 +40,6 @@ const Skills = () => {
         <Skillset iconName={faNodeJs} iconTitle={"NodeJs"} />
         <Skillset iconName={faWordpress} iconTitle={"Wordpress"} />
         <Skillset iconName={faSass} iconTitle={"Sass/SCSS"} />
-        <Skillset iconName={faNodeJs} iconTitle={"NodeJs"} />
         <div className="icon-container">
           <SiMysql className="react-icons" />
           <p className="icon-name">MySQL</p>
