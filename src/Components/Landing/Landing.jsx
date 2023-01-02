@@ -8,6 +8,7 @@ import {
   faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import Resume from "../../assets/pdfs/Resume.pdf";
 
 const Landing = () => {
   const autoRef = useRef(null);
@@ -32,6 +33,8 @@ const Landing = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // const file = URL.createObjectURL("../../assets/pdfs/Resume.pdf");
+
   return (
     <div className="landing">
       <Navbar />
@@ -42,6 +45,20 @@ const Landing = () => {
           <h2 className="landing__heading">
             I am <span className="auto-type" ref={autoRef}></span>
           </h2>
+        </div>
+
+        <div>
+          <a
+            href={Resume}
+            className="btn btn--white btn--animated"
+            download="Moyinoluwa's Resume.pdf"
+            onClick={(e) => {
+              e.preventDefault();
+              console.log(e);
+            }}
+          >
+            Download Resume
+          </a>
         </div>
 
         <div className="landing__footer">
