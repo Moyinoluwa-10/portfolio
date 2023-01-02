@@ -60,7 +60,7 @@
   border-radius: 10rem;
   transition: all 0.2 ease;
   position: relative;
-  font-size: 1rem;
+  font-size: 16px;
   text-align: center;
   display: block;
   margin: 0 auto;
@@ -196,7 +196,7 @@
   }
 
   .landing .landing__heading {
-    font-size: 40px;
+    font-size: 35px;
     line-height: 45px;
   }
 
@@ -218,6 +218,11 @@
   .landing .landing__heading {
     font-size: 25px;
     line-height: 35px;
+  }
+
+  .landing .btn:link,
+  .landing .btn:visited {
+    font-size: 14px;
   }
 
   .landing .landing__footer {

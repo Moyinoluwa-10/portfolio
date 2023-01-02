@@ -52,10 +52,6 @@ const Landing = () => {
             href={Resume}
             className="btn btn--white btn--animated"
             download="Moyinoluwa's Resume.pdf"
-            onClick={(e) => {
-              e.preventDefault();
-              console.log(e);
-            }}
           >
             Download Resume
           </a>
