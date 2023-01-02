@@ -54,7 +54,7 @@
 
 @media screen and (max-width: 768px) {
   .about {
-    padding: 90px 30px;
+    padding: 60px 30px 90px;
   }
 
   .about .about__wrapper {

@@ -191,7 +191,7 @@
 /* RESPONSIVENESS */
 @media screen and (max-width: 768px) {
   .landing .landing-container {
-    margin: 100px 0px 0px;
+    margin: 120px 0px 0px;
     padding: 0 30px;
   }
 
@@ -218,6 +218,7 @@
   .landing .landing__heading {
     font-size: 25px;
     line-height: 35px;
+    margin-bottom: 70px;
   }
 
   .landing .btn:link,
