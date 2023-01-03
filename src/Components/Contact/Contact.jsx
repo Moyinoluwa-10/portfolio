@@ -66,30 +66,9 @@ const Contact = () => {
             values.email = "";
             values.message = "";
             setIsLoading(false);
-            toast.success(
-              JSON.stringify("Message sent successfully", null, 2),
-              {
-                position: "top-right",
-                autoClose: 5000,
-                hideProgressBar: true,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "colored",
-              }
-            );
+            toast.success(JSON.stringify("Message sent successfully", null, 2));
           } else {
-            toast.error(JSON.stringify("Message Failed to Send", null, 2), {
-              position: "top-right",
-              autoClose: 5000,
-              hideProgressBar: true,
-              closeOnClick: true,
-              pauseOnHover: true,
-              draggable: true,
-              progress: undefined,
-              theme: "colored",
-            });
+            toast.error(JSON.stringify("Message Failed to Send", null, 2));
           }
         })
         .catch((err) => console.log(err));
@@ -107,7 +86,6 @@ const Contact = () => {
           <p>Need a Service?</p>
           <h3>Send A Message</h3>
         </div>
-
         <div className="form-control">
           <input
             type="text"
@@ -123,7 +101,6 @@ const Contact = () => {
             <div className="error">{formik.errors.name}</div>
           ) : null}
         </div>
-
         <div className="form-control">
           <input
             type="email"
@@ -139,7 +116,6 @@ const Contact = () => {
             <div className="error">{formik.errors.email}</div>
           ) : null}
         </div>
-
         <div className="form-control">
           <textarea
             name="message"
@@ -157,7 +133,6 @@ const Contact = () => {
             <div className="error">{formik.errors.message}</div>
           ) : null}
         </div>
-
         <div className="form-control">
           <button type="submit" className="btn">
             Send
@@ -165,7 +140,7 @@ const Contact = () => {
         </div>
 
         <ToastContainer
-          position="top-right"
+          position="top-center"
           autoClose={5000}
           hideProgressBar
           newestOnTop
@@ -175,7 +150,6 @@ const Contact = () => {
           draggable
           pauseOnHover
           theme="colored"
-          className={"toast"}
         />
       </form>
     </div>

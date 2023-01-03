@@ -67,6 +67,11 @@
   font-family: inherit;
 }
 
+.contact .input:focus,
+.contact .textarea:focus {
+  border: 2px solid var(--black);
+}
+
 #dark .contact .input,
 #dark .contact .textarea {
   border: 1px solid var(--white);
@@ -133,9 +138,9 @@
 }
 
 .contact .toast {
-  position: fixed;
-  right: 0;
-  top: 30px;
+  /* position: fixed; */
+  /* right: 0; */
+  /* top: 0px; */
 }
 
 @media screen and (max-width: 768px) {
