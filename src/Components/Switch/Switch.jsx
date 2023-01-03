@@ -12,7 +12,7 @@ const Switch = () => {
     <div>
       <ReactSwitch
         onChange={toggleTheme}
-        checked={theme === "light"}
+        checked={theme === "dark"}
         className="react-switch"
         boxShadow="0px 0px 0px rgba(0, 0, 0, 0.0)"
         activeBoxShadow="0px 0px 0px rgba(0, 0, 0, 0.0)"

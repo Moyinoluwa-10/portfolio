@@ -66,9 +66,9 @@
   -webkit-text-stroke: 1px blue;
   animation: animateText 1.5s linear infinite;
   animation-direction: alternate;
+  font-family: "Fugaz One", cursive;
   /* font-family: "Zen Dots", cursive; */
   /* font-family: U8-Bold, sans-serif; */
-  font-family: "Fugaz One", cursive;
 }
 
 .preloader .text__m {

@@ -8,23 +8,16 @@ import Skills from "../../Components/Skills/Skills";
 import ProjectDemo from "../../Components/ProjectDemo/ProjectDemo";
 import Contact from "../../Components/Contact/Contact";
 import Footer from "../../Components/Footer/Footer";
-// import Education from "../../Components/Education";
 
 import { ThemeContext } from "../../Context/ThemeContext.jsx";
 
 const Home = () => {
-  // useEffect(() => {
-  //   if (!window.matchMedia("(prefers-color-scheme: light)")) {
-  //     setTheme("dark");
-  //   } else {
-  //     setTheme("light");
-  //   }
-  // }, []);
-
   const [theme, setTheme] = useState("light");
+
+  document.body.id = theme;
+
   const toggleTheme = () => {
     setTheme((curr) => (curr === "dark" ? "light" : "dark"));
-    setTimeout((document.body.id = theme), 1000);
   };
 
   return (
@@ -37,7 +30,6 @@ const Home = () => {
         <ProjectDemo />
         <Contact />
         <Footer />
-        {/* <Education /> */}
       </>
     </ThemeContext.Provider>
   );
