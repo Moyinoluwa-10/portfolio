@@ -8,9 +8,11 @@
   --very-dark-blue: #12122c;
   --black: #000;
   --white: #fff;
+  --white-faded: rgba(255, 255, 255, 0.7);
   --slighty-white: #f1f1f1;
   --slighty-black: #1f1f1f;
   --slighty-black2: #222527;
+  --red: #d10707;
 }
 
 body {

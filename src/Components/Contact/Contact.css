@@ -74,7 +74,7 @@
 }
 
 .contact ::placeholder {
-  font-size: 15px;
+  font-size: 14px;
   color: var(--black);
   opacity: 0.9;
   font-family: inherit;
@@ -82,12 +82,18 @@
 }
 
 #dark form ::placeholder {
-  color: var(--white);
+  color: var(--white-faded);
 }
 
 .contact .textarea {
   resize: none;
   height: 250px;
+}
+
+.contact .error {
+  color: var(--red);
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .contact .btn {
@@ -124,6 +130,12 @@
 
 .contact .btn:active {
   transform: scale(0.95);
+}
+
+.contact .toast {
+  position: absolute;
+  left: 0;
+  top: 30px;
 }
 
 @media screen and (max-width: 768px) {
