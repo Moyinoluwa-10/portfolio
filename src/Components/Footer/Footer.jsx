@@ -7,19 +7,10 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import Aos from "aos";
-import "aos/dist/aos.css";
-
-Aos.init({ duration: 1500 });
 
 const Footer = () => {
   return (
-    <div
-      className="footer"
-      data-aos="fade-up"
-      data-aos-duration="1000"
-      data-aos-easing="ease"
-    >
+    <div className="footer">
       <div className="top-container">
         <div className="empty-container"></div>
         <div>

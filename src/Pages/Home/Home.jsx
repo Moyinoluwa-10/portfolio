@@ -24,11 +24,12 @@ const Home = () => {
   const [theme, setTheme] = useState("light");
   const toggleTheme = () => {
     setTheme((curr) => (curr === "dark" ? "light" : "dark"));
+    setTimeout((document.body.id = theme), 1000);
   };
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div id={theme}>
+      <>
         <Preloader />
         <Landing />
         <About />
@@ -37,7 +38,7 @@ const Home = () => {
         <Contact />
         <Footer />
         {/* <Education /> */}
-      </div>
+      </>
     </ThemeContext.Provider>
   );
 };
