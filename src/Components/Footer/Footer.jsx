@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
         <div>
           <a
-            href="https://twitter.com/AdelowoMoyin"
+            href="https://twitter.com/rotii_mii"
             target={"_blank"}
             rel="noreferrer"
           >
