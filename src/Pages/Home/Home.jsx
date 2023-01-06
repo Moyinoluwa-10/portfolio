@@ -12,7 +12,7 @@ import Footer from "../../Components/Footer/Footer";
 import { ThemeContext } from "../../Context/ThemeContext.jsx";
 
 const Home = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   document.body.id = theme;
 
