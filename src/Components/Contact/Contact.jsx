@@ -3,8 +3,7 @@ import "./Contact.css";
 import PageLoader from "../Pageloader/PageLoader";
 
 import { useFormik } from "formik";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import toast from "react-hot-toast";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -50,7 +49,8 @@ const Contact = () => {
     validate,
     onSubmit: (values) => {
       setIsLoading(true);
-      const url = "https://mailer-lake.vercel.app/api/v1/send-email";
+      const toastId = toast.loading("Loading...");
+      const url = "https://mailer-lake.vercel.app/api/v1/send-emai";
       fetch(url, {
         method: "POST",
         headers: {
@@ -62,16 +62,38 @@ const Contact = () => {
         .then((result) => {
           console.log(result);
           if (result.status === true) {
-            values.name = "";
-            values.email = "";
-            values.message = "";
+            // values.name = "";
+            // values.email = "";
+            // values.message = "";
             setIsLoading(false);
-            toast.success(JSON.stringify("Message sent successfully", null, 2));
+            toast.dismiss(toastId);
+            toast.dismiss();
+            toast.success(
+              JSON.stringify("Message sent successfully", {
+                id: toastId,
+              })
+            );
           } else {
-            toast.error(JSON.stringify("Message Failed to Send", null, 2));
+            toast.dismiss(toastId);
+            toast.dismiss();
+            toast.error(
+              JSON.stringify("Message Failed to Send", {
+                id: toastId,
+              })
+            );
+            // toast.error(JSON.stringify("Message Failed to Send", null, 2));
           }
         })
-        .catch((err) => console.log(err));
+        .catch((err) => {
+          setIsLoading(false);
+          toast.dismiss();
+          toast.error(
+            JSON.stringify("An error occured", {
+              id: toastId,
+            })
+          );
+          console.log(err);
+        });
     },
   });
 
@@ -139,7 +161,7 @@ const Contact = () => {
           </button>
         </div>
 
-        <ToastContainer
+        {/* <ToastContainer
           position="top-center"
           autoClose={5000}
           hideProgressBar
@@ -150,7 +172,7 @@ const Contact = () => {
           draggable
           pauseOnHover
           theme="colored"
-        />
+        /> */}
       </form>
     </div>
   );
