@@ -1,5 +1,5 @@
 .projectdemo {
-  padding: 130px 50px;
+  padding: 50px 50px;
   background-color: var(--light-bg);
 }
 
@@ -119,7 +119,7 @@
 
 @media screen and (max-width: 1024px) {
   .projectdemo {
-    padding: 90px 30px;
+    padding: 50px 30px;
   }
 
   /* .contact form button:before {
@@ -152,7 +152,7 @@
 
 @media screen and (max-width: 768px) {
   .projectdemo {
-    padding: 90px 30px;
+    padding: 50px 30px;
   }
 
   /* .contact form button:before {

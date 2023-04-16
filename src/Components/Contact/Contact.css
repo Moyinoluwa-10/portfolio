@@ -1,12 +1,12 @@
 .contact {
-  padding: 100px 50px;
+  padding: 50px 50px;
   background-color: var(--light-bg);
   color: var(--black);
 }
 
 #dark .contact {
   background-color: var(--dark-bg);
-  color: var(-var(--white));
+  color: var(--white);
 }
 
 .contact .contact__heading {
@@ -14,14 +14,13 @@
   line-height: 65px;
   text-align: center;
   color: var(--slighty-black);
-  margin-bottom: 30px;
 }
 
 #dark .contact .contact__heading {
   color: var(--slighty-white);
 }
 
-.contact form {
+.contact .form {
   width: 100%;
   padding: 40px 50px;
 }
@@ -48,8 +47,32 @@
   color: var(--white);
 }
 
+.contact .form-group {
+  margin-bottom: 20px;
+}
+
 .contact .form-control {
-  padding: 10px 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.contact .label {
+  color: var(--black);
+  margin-bottom: 5px;
+  font-weight: 600;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+#dark .contact .label {
+  color: var(--white);
+}
+
+.contact .input:placeholder-shown ~ .label,
+.contact .textarea:placeholder-shown ~ .label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(20px) translateY(2.4rem);
 }
 
 .contact .input,
@@ -65,11 +88,12 @@
   line-height: 24px;
   font-weight: 500;
   font-family: inherit;
+  transition: all 0.3s ease-in-out;
 }
 
-.contact .input:focus,
-.contact .textarea:focus {
-  border: 2px solid var(--black);
+.contact .textarea {
+  resize: none;
+  height: 250px;
 }
 
 #dark .contact .input,
@@ -78,74 +102,111 @@
   color: var(--white);
 }
 
+.contact .input:focus,
+.contact .textarea:focus {
+  border: 2px solid var(--black);
+}
+
+#dark .contact .input:focus,
+#dark .contact .textarea:focus {
+  border: 2px solid var(--white);
+}
+
 .contact ::placeholder {
   font-size: 14px;
-  color: var(--black);
+  color: var(--black-faded);
   opacity: 0.9;
   font-family: inherit;
   font-weight: 400;
 }
 
-#dark form ::placeholder {
+#dark .contact ::placeholder {
   color: var(--white-faded);
-}
-
-.contact .textarea {
-  resize: none;
-  height: 250px;
 }
 
 .contact .error {
   color: var(--red);
   font-size: 14px;
   line-height: 18px;
+  margin-top: 3px;
+}
+
+#dark .contact .error {
+  color: var(--red-light);
 }
 
 .contact .btn {
   padding: 15px 40px;
   background-color: var(--dark-blue);
-  color: var(--very-light-blue);
   border: none;
   outline: none;
   font-weight: 700;
-  border-radius: 5px;
   transition: all 0.3s ease;
   cursor: pointer;
   font-family: inherit;
-  font-size: 16px;
-  line-height: 24px;
+  position: relative;
+  height: 54px;
 }
 
 #dark .contact .btn {
   background-color: var(--very-light-blue);
-  color: var(--dark-blue);
 }
 
-.contact .btn:hover {
-  color: var(--dark-blue);
-  background-color: var(--very-light-blue);
-  border: 2px solid var(--dark-blue);
-}
-
-#dark .contact .btn:hover {
+.contact .btn p {
+  position: relative;
+  z-index: 2;
+  font-size: 16px;
+  line-height: 24px;
   color: var(--very-light-blue);
-  background-color: var(--dark-blue);
-  border: 2px solid var(--very-light-blue);
+  transition: all 0.3s ease;
+}
+
+#dark .contact .btn p {
+  color: var(--dark-blue);
+}
+
+.contact .btn::before {
+  content: "";
+  background: var(--very-light-blue);
+  border: 1px solid var(--dark-blue);
+  width: 0;
+  height: 100%;
+  height: 52px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+
+#dark .contact .btn::before {
+  background: var(--dark-blue);
+  border: 1px solid var(--very-light-blue);
+}
+
+.contact .btn:hover::before {
+  width: 100%;
+}
+
+#dark .contact .btn:hover::before {
+  width: 100%;
+}
+
+.contact .btn:hover p {
+  color: var(--dark-blue);
+}
+
+#dark .contact .btn:hover p {
+  color: var(--very-light-blue);
 }
 
 .contact .btn:active {
   transform: scale(0.95);
 }
 
-.contact .toast {
-  /* position: fixed; */
-  /* right: 0; */
-  /* top: 0px; */
-}
-
 @media screen and (max-width: 768px) {
   .contact {
-    padding: 70px 30px;
+    padding: 50px 30px;
   }
 
   .contact .contact__heading {
@@ -154,7 +215,7 @@
     margin-bottom: 30px;
   }
 
-  .contact form {
+  .contact .form {
     padding: 40px 0px;
   }
 }

@@ -7,12 +7,14 @@
   --dark-blue: #01192f;
   --very-dark-blue: #12122c;
   --black: #000;
+  --black-faded: hsla(0, 0%, 0%, 0.9);
   --white: #fff;
   --white-faded: rgba(255, 255, 255, 0.7);
   --slighty-white: #f1f1f1;
   --slighty-black: #1f1f1f;
   --slighty-black2: #222527;
   --red: #d10707;
+  --red-light: #ff2d2d;
   --scroll-light: #e4e4e4;
   --scroll-light-hover: #dcdcdc;
   --scroll-dark: #242424;
