@@ -22,7 +22,7 @@ const Skills = () => {
           </h1>
         </div>
         <div>
-          <p className="skills__text" data-aos="fade-left">
+          <p className="skills__text" data-aos="fade-right">
             Here are a few tools and technologies I use
           </p>
         </div>
