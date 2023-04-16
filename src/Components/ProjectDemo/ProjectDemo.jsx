@@ -18,9 +18,9 @@ const projectData = [
     id: 1,
     title: "Shrink it",
     description:
-      "A URL shortener built with react.js and node.js. It allows you to shorten your long urls and share them with your friends.",
+      "A URL shortener that allows you to shorten your long URLs and share them with your friends.",
     image: Shrink,
-    imageAlt: "",
+    imageAlt: "shrink-it",
     githubLink: "https://github.com/Moyinoluwa-10/shrink-it",
     liveLink: "https://url-shortener-one-black.vercel.app/",
     toolsUsed: ["React.js", "SCSS/Sass", "Node.js", "Express.js", "MongoDB"],
@@ -29,9 +29,9 @@ const projectData = [
     id: 2,
     title: "Jitters Chatbot",
     description:
-      "A chatbot built with node.js. It helps you place orders on jitters website.",
+      "A chatbot built to help customers place orders from a restaurant’s site. Users orders are also saved for future reference.",
     image: Jitters,
-    imageAlt: "",
+    imageAlt: "jittter",
     githubLink: "https://github.com/Moyinoluwa-10/restaurant_chatbot",
     liveLink: "https://restaurant-chatbot-v5u5.onrender.com/",
     toolsUsed: [
@@ -48,20 +48,20 @@ const projectData = [
     id: 3,
     title: "Varena",
     description:
-      "A play to earn nft battle game built with matter.js and react.js",
+      "A play to earn nft battle game that runs on a 2D physics engine(matter.js) and blockchain",
     image: Varena,
-    imageAlt: "",
+    imageAlt: "varena",
     githubLink: "https://github.com/workshopapps/nftcreatures.web",
     liveLink: "https://varena.app/",
-    toolsUsed: ["React.js", "Node.js", "Express.js", "MongoDB"],
+    toolsUsed: ["React.js", "Matter.js", "Node.js", "Express.js", "MongoDB"],
   },
   {
     id: 4,
     title: "Phonie",
     description:
-      "A simple form page with support for international numbers with country identification. It shows the country flag and country code of the number entered. It also identify and show the mobile network for Nigerian numbers",
+      "A simple form page with support for international numbers with country identification. It shows the country flag and country code of the number entered. It also identifies and show the mobile network for Nigerian numbers",
     image: Phonie,
-    imageAlt: "",
+    imageAlt: "phonie",
     githubLink: "https://github.com/Moyinoluwa-10/phonie",
     liveLink: "https://moyinoluwa-10.github.io/phonie/",
     toolsUsed: ["HTML", "CSS", "Javascript"],
@@ -75,7 +75,8 @@ const ProjectDemo = () => {
         Projects
       </h1>
       <p className="projectdemo__text" data-aos="fade-down">
-        These are some of my featured projects. You can view more on my Github.
+        These are some of my featured projects. You can view more on{" "}
+        <a href="https://github.com/Moyinoluwa-10/"> github.</a>
       </p>
 
       <div className="projectdemo__container">
