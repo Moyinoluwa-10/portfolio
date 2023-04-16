@@ -41,7 +41,7 @@ const Contact = () => {
     validate,
     onSubmit: (values, { resetForm }) => {
       const toastId = toast.loading("Loading...");
-      const url = "https://mailer-lake.vercel.app/api/v1/send-email";
+      const url = "https://mailer-lake.vercel.app/api/v0/send-email";
       fetch(url, {
         method: "POST",
         headers: {
