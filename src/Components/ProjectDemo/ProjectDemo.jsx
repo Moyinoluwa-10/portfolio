@@ -1,11 +1,12 @@
 import React from "react";
 import "./ProjectDemo.css";
 import Aos from "aos";
-import "aos/dist/aos.css";
+// images
 import Varena from "../../assets/images/varena.png";
 import Shrink from "../../assets/images/shrink.png";
 import Phonie from "../../assets/images/phonie.png";
 import Jitters from "../../assets/images/jitters.png";
+// icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
@@ -88,8 +89,8 @@ const ProjectDemo = () => {
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <div className="projectdemo__tools">
-                  {project.toolsUsed.map((tools) => {
-                    return <span>{tools}</span>;
+                  {project.toolsUsed.map((tools, key) => {
+                    return <span key={key}>{tools}</span>;
                   })}
                 </div>
                 <div className="projectdemo__links">
