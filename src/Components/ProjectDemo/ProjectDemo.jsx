@@ -1,6 +1,5 @@
 import React from "react";
 import "./ProjectDemo.css";
-import Aos from "aos";
 // images
 import Varena from "../../assets/images/varena.png";
 import Shrink from "../../assets/images/shrink.png";
@@ -10,8 +9,6 @@ import Jitters from "../../assets/images/jitters.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-
-Aos.init({ duration: 1500 });
 
 const projectData = [
   {

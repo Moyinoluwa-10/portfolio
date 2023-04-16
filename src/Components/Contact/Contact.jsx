@@ -2,9 +2,6 @@ import React from "react";
 import "./Contact.css";
 import { useFormik } from "formik";
 import toast from "react-hot-toast";
-import Aos from "aos";
-
-Aos.init({ duration: 1500 });
 
 const Contact = () => {
   const validate = (values) => {

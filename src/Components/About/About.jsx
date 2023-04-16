@@ -1,9 +1,6 @@
 import React from "react";
 import "./About.css";
 import MyPic from "../../assets/images/profilepic.jpg";
-import Aos from "aos";
-
-Aos.init({ duration: 1500 });
 
 const About = () => {
   return (

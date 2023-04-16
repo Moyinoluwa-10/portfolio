@@ -11,9 +11,6 @@ import {
   faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
 import { SiMysql, SiMongodb } from "react-icons/si";
-import Aos from "aos";
-
-Aos.init({ duration: 1500 });
 
 const Skills = () => {
   return (

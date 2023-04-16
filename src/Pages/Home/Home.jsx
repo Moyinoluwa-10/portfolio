@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Home.css";
+import Aos from "aos";
 
 import Preloader from "../../Components/Preloader/Preloader";
 import Landing from "../../Components/Landing/Landing";
@@ -10,6 +11,11 @@ import Contact from "../../Components/Contact/Contact";
 import Footer from "../../Components/Footer/Footer";
 
 import { ThemeContext } from "../../Context/ThemeContext.jsx";
+
+Aos.init({
+  once: true,
+  duration: 1500,
+});
 
 const Home = () => {
   const [theme, setTheme] = useState("dark");
