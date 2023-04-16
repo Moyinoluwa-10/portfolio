@@ -9,10 +9,10 @@ import {
   faReact,
   faWordpress,
   faSass,
+  faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
 import { SiMysql, SiMongodb } from "react-icons/si";
 import Aos from "aos";
-import "aos/dist/aos.css";
 
 Aos.init({ duration: 1500 });
 
@@ -27,7 +27,7 @@ const Skills = () => {
         </div>
         <div>
           <p className="skills__text" data-aos="fade-up">
-            Here are a few tools I use
+            Here are a few tools and technologies I use
           </p>
         </div>
       </div>
@@ -38,8 +38,8 @@ const Skills = () => {
         <Skillset iconName={faJs} iconTitle={"Javascript"} />
         <Skillset iconName={faReact} iconTitle={"ReactJS"} />
         <Skillset iconName={faNodeJs} iconTitle={"NodeJs"} />
-        <Skillset iconName={faWordpress} iconTitle={"Wordpress"} />
         <Skillset iconName={faSass} iconTitle={"Sass/SCSS"} />
+        <Skillset iconName={faBootstrap} iconTitle={"BootStrap"} />
         <div className="icon-container">
           <SiMysql className="react-icons" />
           <p className="icon-name">MySQL</p>
