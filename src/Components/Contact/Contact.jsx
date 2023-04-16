@@ -78,7 +78,7 @@ const Contact = () => {
 
   return (
     <div className="contact" id="contact">
-      <h1 className="contact__heading" data-aos="zoom-in">
+      <h1 className="contact__heading" data-aos="fade-up">
         Contact Me
       </h1>
 

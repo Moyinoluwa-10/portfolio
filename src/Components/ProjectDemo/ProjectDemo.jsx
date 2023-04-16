@@ -74,56 +74,58 @@ const ProjectDemo = () => {
       <h1 className="projectdemo__heading" data-aos="fade-up">
         Projects
       </h1>
-      <p className="projectdemo__text" data-aos="fade-down">
+      <p className="projectdemo__text" data-aos="fade-right">
         These are some of my featured projects. You can view more on{" "}
         <a href="https://github.com/Moyinoluwa-10/"> github.</a>
       </p>
 
-      <div className="projectdemo__container">
-        {projectData.map((project) => {
-          return (
-            <div key={project.id} className="projectdemo__box">
-              <div className="projectdemo__image-box">
-                <img src={project.image} alt={project.imageAlt} />
-              </div>
-              <div className="projectdemo__text-box">
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-                <div className="projectdemo__tools">
-                  {project.toolsUsed.map((tools, key) => {
-                    return <span key={key}>{tools}</span>;
-                  })}
+      <div data-aos="fade-up">
+        <div className="projectdemo__container">
+          {projectData.map((project) => {
+            return (
+              <div key={project.id} className="projectdemo__box">
+                <div className="projectdemo__image-box">
+                  <img src={project.image} alt={project.imageAlt} />
                 </div>
-                <div className="projectdemo__links">
-                  <div>
-                    <a
-                      href={project.githubLink}
-                      target={"_blank"}
-                      rel="noreferrer"
-                    >
-                      <FontAwesomeIcon
-                        icon={faGithub}
-                        className="projectdemo__icon"
-                      />
-                    </a>
+                <div className="projectdemo__text-box">
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                  <div className="projectdemo__tools">
+                    {project.toolsUsed.map((tools, key) => {
+                      return <span key={key}>{tools}</span>;
+                    })}
                   </div>
-                  <div>
-                    <a
-                      href={project.liveLink}
-                      target={"_blank"}
-                      rel="noreferrer"
-                    >
-                      <FontAwesomeIcon
-                        icon={faArrowUpRightFromSquare}
-                        className="projectdemo__icon"
-                      />
-                    </a>
+                  <div className="projectdemo__links">
+                    <div>
+                      <a
+                        href={project.githubLink}
+                        target={"_blank"}
+                        rel="noreferrer"
+                      >
+                        <FontAwesomeIcon
+                          icon={faGithub}
+                          className="projectdemo__icon"
+                        />
+                      </a>
+                    </div>
+                    <div>
+                      <a
+                        href={project.liveLink}
+                        target={"_blank"}
+                        rel="noreferrer"
+                      >
+                        <FontAwesomeIcon
+                          icon={faArrowUpRightFromSquare}
+                          className="projectdemo__icon"
+                        />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );

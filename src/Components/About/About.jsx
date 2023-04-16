@@ -8,12 +8,12 @@ Aos.init({ duration: 1500 });
 const About = () => {
   return (
     <div className="about" id="about">
-      <h1 className="about__heading" data-aos="flip-down">
+      <h1 className="about__heading" data-aos="fade-up">
         About Me
       </h1>
       <div className="about__wrapper">
         <div className="about__text-container">
-          <p className="about__text" data-aos="fade-zoom-in">
+          <p className="about__text" data-aos="fade-up">
             My name is Moyinoluwa Adelowo. I’m a full stack developer proficient
             in front-end and back-end development. I use MERN (MongoDB,
             ExpressJS, React, NodeJS) stack web developement tools.
@@ -27,7 +27,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="about__image-container" data-aos="fade-up-right">
+        <div className="about__image-container" data-aos="fade-up">
           <img src={MyPic} alt="Display Pic" />
         </div>
       </div>

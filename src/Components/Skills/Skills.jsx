@@ -7,7 +7,6 @@ import {
   faJs,
   faNodeJs,
   faReact,
-  faWordpress,
   faSass,
   faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
@@ -21,12 +20,12 @@ const Skills = () => {
     <div className="skills">
       <div className="skills__text-container">
         <div>
-          <h1 className="skills__heading" data-aos="fade-down">
+          <h1 className="skills__heading" data-aos="fade-up">
             My Tools
           </h1>
         </div>
         <div>
-          <p className="skills__text" data-aos="fade-up">
+          <p className="skills__text" data-aos="fade-left">
             Here are a few tools and technologies I use
           </p>
         </div>
