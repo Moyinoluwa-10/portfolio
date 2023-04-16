@@ -118,21 +118,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .projectdemo {
-    padding: 50px 30px;
-  }
-
-  .projectdemo .projectdemo__heading {
-    font-size: 40px;
-    line-height: 50px;
-    margin-bottom: 30px;
-  }
-
-  .projectdemo .projectdemo__text {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
   .projectdemo .projectdemo__container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -143,22 +128,10 @@
     padding: 50px 30px;
   }
 
-  /* .contact form button:before {
-    content: "";
-    background: #121212;
-    width: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    transition: .3s ease-in-out;
-  } */
-
   .projectdemo .projectdemo__heading {
     font-size: 40px;
     line-height: 50px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
   }
 
   .projectdemo .projectdemo__text {
