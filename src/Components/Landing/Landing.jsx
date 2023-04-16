@@ -33,7 +33,7 @@ const Landing = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // const file = URL.createObjectURL("../../assets/pdfs/Resume.pdf");
+  // const file = window.URL.createObjectURL("../../assets/pdfs/Resume.pdf");
 
   return (
     <div className="landing">
@@ -51,7 +51,7 @@ const Landing = () => {
           <a
             href={Resume}
             className="btn btn--white btn--animated"
-            download="Moyinoluwa's Resume.pdf"
+            download="Moyinoluwa's_Resume.pdf"
           >
             Download Resume
           </a>
