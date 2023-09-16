@@ -51,7 +51,7 @@ const Landing = () => {
           <a
             href={Resume}
             className="btn btn--white btn--animated"
-            download="Moyinoluwa's_Resume.pdf"
+            download="Moyinoluwa_Adelowo_Resume.pdf"
           >
             Download Resume
           </a>
@@ -69,7 +69,7 @@ const Landing = () => {
           </div>
           <div>
             <a
-              href="https://twitter.com/rotii_mii"
+              href="https://twitter.com/MoyinAdelowo"
               target={"_blank"}
               rel="noreferrer"
             >

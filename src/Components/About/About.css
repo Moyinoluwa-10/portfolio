@@ -41,6 +41,7 @@
 
 .about .about__image-container {
   max-width: 500px;
+  margin-left: auto;
   width: 100%;
   border-radius: 100%;
   overflow: hidden;
