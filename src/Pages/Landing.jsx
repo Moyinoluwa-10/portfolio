@@ -3,7 +3,7 @@ import About from "../Components/About";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
 import Hero from "../Components/Hero";
-import Preloader from "../Components/Preloader";
+// import Preloader from "../Components/Preloader";
 import Project from "../Components/Project";
 import Skills from "../Components/Skills";
 // others
@@ -17,7 +17,7 @@ Aos.init({
 const Landing = () => {
   return (
     <>
-      <Preloader />
+      {/* <Preloader /> */}
       <Hero />
       <About />
       <Skills />

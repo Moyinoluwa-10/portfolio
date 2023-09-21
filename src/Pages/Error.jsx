@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 // components
 import Header from "../Components/Header";
+// hooks
+import ChangePageTitle from "../hooks/ChangePageTitle";
 
 const Error = () => {
   return (
     <>
+      <ChangePageTitle pageTitle={"404 | Page Not Found"} />
       <div className="bg-light dark:bg-dark">
         <Header></Header>
         <main className="py-12 px-8 md:px-12 text-black dark:text-white">

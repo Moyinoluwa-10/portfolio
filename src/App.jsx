@@ -8,7 +8,6 @@ import { ThemeContext } from "./Context/ThemeContext";
 
 function App() {
   useEffect(() => {
-    // on page load or when changing themes, best to add inline in `head` to avoid FOUC
     if (
       localStorage.getItem("theme") === "dark" ||
       (!("theme" in localStorage) &&
@@ -20,12 +19,9 @@ function App() {
       document.documentElement.classList.remove("dark");
       setTheme("light");
     }
-
-    // whenever the user explicitly chooses to respect the OS preference
-    localStorage.removeItem("theme");
   }, []);
 
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(localStorage.getItem("theme"));
 
   if (theme === "light") {
     document.documentElement.classList.remove("dark");
