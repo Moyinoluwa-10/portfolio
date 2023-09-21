@@ -1,6 +1,9 @@
 const About = () => {
   return (
-    <section className="py-12 px-8 md:px-12 bg-light dark:bg-dark" id="about">
+    <section
+      className="py-12 px-8 md:px-12 bg-light dark:bg-dark overflow-hidden"
+      id="about"
+    >
       <h1
         className="text-4xl md:text-5xl text-center mb-8 md:mb-10 text-slightly-black dark:text-slightly-white"
         data-aos="fade-up"
@@ -11,7 +14,7 @@ const About = () => {
         <div>
           <p
             className="text-black dark:text-white max-w-lg md:max-w-md"
-            data-aos="fade-left"
+            data-aos="fade-right"
           >
             I'm Moyinoluwa Adelowo, a Mechanical Engineering freshman with a
             Computer Science minor. Beyond my academic pursuits, I'm a
@@ -31,7 +34,7 @@ const About = () => {
 
         <div
           className="max-w-lg md:ml-auto w-full rounded-full overflow-hidden"
-          data-aos="fade-right"
+          data-aos="fade-left"
           data-aos-delay="100"
         >
           <img

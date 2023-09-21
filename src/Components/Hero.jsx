@@ -41,10 +41,10 @@ const Landing = () => {
 
       <section className="px-12">
         <div className="mt-20">
-          <p className="text-black dark:text-white text-3xl mb-8">
+          <p className="text-black dark:text-white text-2xl sm:text-3xl mb-8">
             Hi There 👋
           </p>
-          <h2 className="text-black dark:text-white text-5xl font-bold mb-12 leading-[1.5]">
+          <h2 className="text-black dark:text-white h-24 sm:h-auto text-3xl sm:text-4xl md:text-5xl font-bold mb-12 leading-[1.5]">
             I am{" "}
             <span
               className="auto-type text-blue-medium dark:text-blue-light"
