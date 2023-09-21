@@ -71,7 +71,7 @@ const Skills = () => {
           data-aos-delay="450"
         >
           <SiTailwindcss className="bg-blue-dark text-blue-very-light rounded-md w-12 h-12 p-2 dark:bg-blue-very-light dark:text-blue-dark" />
-          <p className="text-base text-black dark:text-white">Tailwind</p>
+          <p className="text-base text-black dark:text-white">TailwindCss</p>
         </div>
         <div
           className="flex items-center flex-col justify-center gap-4"

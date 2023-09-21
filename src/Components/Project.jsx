@@ -1,6 +1,7 @@
 // images
 import Varena from "/images/varena.png";
 import Bub from "/images/bub.png";
+import Gain from "/images/gain.png";
 import Jitters from "/images/jitters.png";
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,6 +11,17 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 const projectData = [
   {
     id: 1,
+    title: "Gain Africa",
+    description:
+      "A website for Gain Africa, a worldwide network of Africans who believe in a better Africa resulting from newly empowered generation of leaders.",
+    image: Gain,
+    imageAlt: "gain",
+    githubLink: "",
+    liveLink: "https://gainafrica.org/",
+    toolsUsed: ["HTML", "TailwindCss", "Javascript"],
+  },
+  {
+    id: 2,
     title: "Bub it",
     description:
       "A URL shortener web application that helps you to shorten your long URLs, customize them, generate QR codes, and share them.",
@@ -20,7 +32,7 @@ const projectData = [
     toolsUsed: ["React.js", "SCSS", "Node.js", "Express.js", "MongoDB"],
   },
   {
-    id: 2,
+    id: 3,
     title: "Jitter's Chatbot",
     description:
       "A chatbot built to streamline the ordering process for a restaurant. Users orders are also saved for future reference.",
@@ -39,7 +51,7 @@ const projectData = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Varena",
     description:
       "A play to earn NFT battle game that runs on a 2D physics engine(matter.js) and blockchain",
@@ -47,7 +59,14 @@ const projectData = [
     imageAlt: "varena",
     githubLink: "https://github.com/workshopapps/nftcreatures.web",
     liveLink: "",
-    toolsUsed: ["React.js", "Matter.js", "Node.js", "Express.js", "MongoDB"],
+    toolsUsed: [
+      "React.js",
+      "CSS",
+      "Matter.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ],
   },
 ];
 
@@ -114,30 +133,34 @@ const Project = () => {
                     })}
                   </div>
                   <div className="flex flex-wrap items-center gap-3">
-                    <div>
-                      <a
-                        href={project.githubLink}
-                        target={"_blank"}
-                        rel="noreferrer"
-                      >
-                        <FontAwesomeIcon
-                          icon={faGithub}
-                          className="text-2xl text-blue-dark dark:text-blue-very-light"
-                        />
-                      </a>
-                    </div>
-                    <div>
-                      <a
-                        href={project.liveLink}
-                        target={"_blank"}
-                        rel="noreferrer"
-                      >
-                        <FontAwesomeIcon
-                          icon={faArrowUpRightFromSquare}
-                          className="text-2xl text-blue-dark dark:text-blue-very-light"
-                        />
-                      </a>
-                    </div>
+                    {project.githubLink && (
+                      <div>
+                        <a
+                          href={project.githubLink}
+                          target={"_blank"}
+                          rel="noreferrer"
+                        >
+                          <FontAwesomeIcon
+                            icon={faGithub}
+                            className="text-2xl text-blue-dark dark:text-blue-very-light"
+                          />
+                        </a>
+                      </div>
+                    )}
+                    {project.liveLink && (
+                      <div>
+                        <a
+                          href={project.liveLink}
+                          target={"_blank"}
+                          rel="noreferrer"
+                        >
+                          <FontAwesomeIcon
+                            icon={faArrowUpRightFromSquare}
+                            className="text-2xl text-blue-dark dark:text-blue-very-light"
+                          />
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
