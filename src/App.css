@@ -100,9 +100,14 @@ nav.active {
 }
 
 /* Project Section */
-.project-box:hover img {
+.project-box img {
   scale: 1.25;
   filter: grayscale(0.5);
+}
+
+.project-box:hover img {
+  scale: 1;
+  filter: none;
 }
 
 /* Contact Section */
