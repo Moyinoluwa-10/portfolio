@@ -3,6 +3,7 @@ import Varena from "/images/varena.png";
 import Bub from "/images/bub.png";
 import Gain from "/images/gain.png";
 import Jitters from "/images/jitters.png";
+import FrontendMentor from "/images/frontend-mentor.png";
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -52,6 +53,17 @@ const projectData = [
   },
   {
     id: 4,
+    title: "Frontend Mentor",
+    description:
+      "A compilation of all the frontend mentor projects I have built.",
+    image: FrontendMentor,
+    imageAlt: "frontend-mentor",
+    githubLink: "https://github.com/Moyinoluwa-10/frontend-mentor",
+    liveLink: "https://frontend-mentor-port.netlify.app/",
+    toolsUsed: ["React.js", "Tailwind"],
+  },
+  {
+    id: 5,
     title: "Varena",
     description:
       "A play to earn NFT battle game that runs on a 2D physics engine(matter.js) and blockchain",
