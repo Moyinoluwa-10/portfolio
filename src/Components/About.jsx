@@ -16,7 +16,7 @@ const About = () => {
             className="text-black dark:text-white max-w-lg md:max-w-md"
             data-aos="fade-right"
           >
-            I'm Moyinoluwa Adelowo, a Mechanical Engineering freshman with a
+            I'm Moyinoluwa Adelowo, a Mechanical Engineering major with a
             Computer Science minor. Beyond my academic pursuits, I'm a
             full-stack developer well-versed in both front-end and back-end
             development. I utilize the MERN stack (MongoDB, ExpressJS, React,
