@@ -1,0 +1,36 @@
+{
+  "name": "moyinadelowo",
+  "description": "This is the portfolio website for Moyinoluwa Adelowo",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Moyinoluwa Adelowo <moyinadelowo@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Moyinoluwa-10/moyinadelowo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Moyinoluwa-10/moyinadelowo/issues"
+  },
+  "homepage": "https://github.com/Moyinoluwa-10/moyinadelowo",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.2.5"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5"
+  }
+}
