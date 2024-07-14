@@ -1,0 +1,61 @@
+{
+    "seo": {
+        "title": "Moyinoluwa Adelowo",
+        "description": "Discover the professional portfolio of Moyinoluwa Adelowo, a Mechanical Engineering student with a passion for software engineering. Discover projects, skills, and professional experiences that showcase a blend of engineering and software proficiency.",
+        "image": "https://moyinadelowo.com/banner.png",
+        "keywords": [
+            "Moyinoluwa Adelowo",
+            "Moyin Adelowo",
+            "Moyinoluwa",
+            "Adelowo",
+            "Moyin",
+            "Engineering",
+            "Software Engineer",
+            "Mechanical Engineer",
+            "Mechanical Engineering",
+            "Software Engineering",
+            "Portfolio",
+            "Engineering Portfolio",
+            "Software Engineering Portfolio",
+            "Mechanical Engineering Portfolio",
+            "Mechanical Engineer Portfolio",
+            "Software Engineer Portfolio"
+        ],
+        "author": [
+            {
+                "name": "Moyinoluwa Adelowo"
+            },
+            {
+                "url": "https://moyinadelowo.com/"
+            }
+        ],
+        "openGraph": {
+            "url": "https://moyinadelowo.com/",
+            "title": "Moyinoluwa Adelowo",
+            "description": "Discover the professional portfolio of Moyinoluwa Adelowo, a Mechanical Engineering student with a passion for software engineering. Discover projects, skills, and professional experiences that showcase a blend of engineering and software proficiency.",
+            "siteName": "Moyinoluwa Adelowo",
+            "locale": "en_US",
+            "images": [
+                {
+                    "url": "https://moyinadelowo.com/banner.png",
+                    "width": 800,
+                    "height": 600
+                },
+                {
+                    "url": "https://moyinadelowo.com/banner.png",
+                    "width": 1800,
+                    "height": 1600
+                }
+            ]
+        },
+        "twitter": {
+            "description": "Discover the professional portfolio of Moyinoluwa Adelowo, a Mechanical Engineering student with a passion for software engineering. Discover projects, skills, and professional experiences that showcase a blend of engineering and software proficiency.",
+            "title": "Moyinoluwa Adelowo",
+            "site": "@MoyinAdelowo",
+            "creator": "@MoyinAdelowo",
+            "images": [
+                "https://moyinadelowo.com/banner.png"
+            ]
+        }
+    }
+}
