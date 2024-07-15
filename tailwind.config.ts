@@ -12,6 +12,9 @@ const config: Config = {
       fontFamily: {
         recursive: ["var(--font-recursive)"],
       },
+      container: {
+        center: true,
+      },
     },
   },
   plugins: [],

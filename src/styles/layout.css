@@ -1,0 +1,36 @@
+/* Header Section */
+nav.active {
+  left: 0%;
+}
+
+.hamburger .bar:nth-child(2) {
+  transition: all 0.3s;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger .bar:nth-child(1) {
+  transition: width 0.3s 0.3s, transform 0.2s;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  opacity: 1;
+  width: 32px;
+  transform: translateY(8px) rotate(135deg);
+  transition: width 0.3s, transform 0.2s 0.3s;
+}
+
+.hamburger .bar:nth-child(3) {
+  transition: width 0.3s 0.3s, transform 0.2s;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  opacity: 1;
+  width: 32px;
+  transform: translateY(-8px) rotate(-135deg);
+  transition: width 0.3s, transform 0.2s 0.3s;
+}
+
+/* Footer Section */

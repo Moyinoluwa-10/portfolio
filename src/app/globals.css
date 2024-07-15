@@ -7,3 +7,9 @@
     text-wrap: balance;
   }
 }
+
+@import "../styles/layout.css";
+
+html:has(section[role="modal"][data-open="true"]) {
+  overflow: hidden;
+}

@@ -3,6 +3,8 @@ import "./globals.css";
 import siteConfig from "@/configs/site-config.json";
 import Providers from "./providers";
 import { recursive } from "./font";
+import Header from "@/components/layouts/header";
+import Footer from "@/components/layouts/footer";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -58,7 +60,11 @@ export default function RootLayout({
       className={`${recursive.variable}`}
     >
       <body className="font-recursive">
-        <Providers>{children}</Providers>
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
