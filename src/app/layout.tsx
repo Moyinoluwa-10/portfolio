@@ -62,7 +62,7 @@ export default function RootLayout({
       <body className="font-recursive">
         <Providers>
           <Header />
-          <main className="bg-white dark:bg-black">{children}</main>
+          <main>{children}</main>
           <Footer />
         </Providers>
       </body>

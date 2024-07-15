@@ -10,7 +10,7 @@ const Header = () => {
   const handleToggleMenu = () => setMenuIsOpen((curr) => !curr);
 
   return (
-    <header className="bg-[#E3EAEA] px-5 py-4">
+    <header className="bg-accent-1 dark:bg-primary text-black dark:text-primary-100 px-5 py-4">
       <div className="container flex items-center justify-between">
         <Logo />
         <DesktopNav />
@@ -23,7 +23,7 @@ const Header = () => {
         </div>
       </div>
       <section
-        className={`fixed w-full h-screen top-0 bg-[#f2f2f2] transition-all duration-500 ease-in-out z-40 flex items-center justify-center p-5 ${
+        className={`fixed w-full h-screen top-0 bg-accent-1 dark:bg-primary text-black dark:text-primary-100 transition-all duration-500 ease-in-out z-40 flex items-center justify-center p-5 ${
           menuIsOpen ? "left-0" : "left-[100%]"
         }`}
         role="modal"

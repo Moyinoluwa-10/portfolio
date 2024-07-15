@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "../styles/layout.css";
+
 @layer base {
   :root {
     --color-accent-1: 227 234 234;
@@ -18,7 +20,13 @@
   }
 }
 
-@import "../styles/layout.css";
+html.dark {
+  background-color: #ffffff;
+}
+
+html.dark {
+  background-color: #0b1c1c;
+}
 
 html:has(section[role="modal"][data-open="true"]) {
   overflow: hidden;

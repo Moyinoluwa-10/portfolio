@@ -1,6 +1,6 @@
 import Image from "next/image";
 import logoLight from "@/assets/images/layout/logo-light.png";
-import logoDark from "@/assets/images/layout/logo-light.png";
+import logoDark from "@/assets/images/layout/logo-dark.png";
 
 export const Logo = () => {
   return (

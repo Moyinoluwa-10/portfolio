@@ -2,15 +2,11 @@ import Link from "next/link";
 import { FiGithub, FiTwitter } from "react-icons/fi";
 import { AiOutlineLinkedin } from "react-icons/ai";
 
-interface MobileNavProps {
-  onClick: () => void;
-}
-
 const links = [
-  { name: "About", path: "#about" },
-  { name: "Projects", path: "#" },
-  { name: "Activities", path: "#" },
-  { name: "Contact", path: "#" },
+  { name: "About", path: "/#about" },
+  { name: "Projects", path: "/projects" },
+  { name: "Activities", path: "/activities" },
+  { name: "Contact", path: "/contact" },
 ];
 
 export const DesktopNav = () => {
@@ -28,13 +24,16 @@ export const DesktopNav = () => {
 export const DesktopSocialLinks = () => {
   return (
     <div className="hidden md:flex items-center gap-9 text-2xl">
-      <Link href="" target="_blank">
+      <Link href="https://github.com/Moyinoluwa-10" target="_blank">
         <FiGithub />
       </Link>
-      <Link href="" target="_blank">
+      <Link href="https://twitter.com/MoyinAdelowo" target="_blank">
         <FiTwitter />
       </Link>
-      <Link href="" target="_blank">
+      <Link
+        href="https://www.linkedin.com/in/moyinoluwa-adelowo/"
+        target="_blank"
+      >
         <AiOutlineLinkedin />
       </Link>
     </div>
@@ -44,13 +43,16 @@ export const DesktopSocialLinks = () => {
 const MobileSocialLinks = () => {
   return (
     <div className="flex md:hidden items-center gap-9 text-2xl">
-      <Link href="" target="_blank">
+      <Link href="https://github.com/Moyinoluwa-10" target="_blank">
         <FiGithub />
       </Link>
-      <Link href="" target="_blank">
+      <Link href="https://twitter.com/MoyinAdelowo" target="_blank">
         <FiTwitter />
       </Link>
-      <Link href="" target="_blank">
+      <Link
+        href="https://www.linkedin.com/in/moyinoluwa-adelowo/"
+        target="_blank"
+      >
         <AiOutlineLinkedin />
       </Link>
     </div>

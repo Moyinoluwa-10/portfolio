@@ -11,9 +11,9 @@ const Hamburger = ({ menuIsOpen, onToggle }: HamburgerProps) => {
       }`}
       onClick={onToggle}
     >
-      <span className="bar block  w-5 h-[2px] mb-[6px] bg-black dark:bg-white rounded-3xl"></span>
-      <span className="bar block  w-8 h-[2px] mb-[6px] bg-black dark:bg-white rounded-3xl"></span>
-      <span className="bar block  w-5 h-[2px] ml-auto bg-black dark:bg-white rounded-3xl"></span>
+      <span className="bar block w-5 h-[2px] mb-[6px] bg-black dark:bg-primary-100 rounded-3xl"></span>
+      <span className="bar block w-8 h-[2px] mb-[6px] bg-black dark:bg-primary-100 rounded-3xl"></span>
+      <span className="bar block w-5 h-[2px] ml-auto bg-black dark:bg-primary-100 rounded-3xl"></span>
     </div>
   );
 };
