@@ -10,10 +10,11 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        recursive: ["var(--recursive)"],
+        recursive: ["var(--font-recursive)"],
       },
     },
   },
   plugins: [],
+  darkMode: "class",
 };
 export default config;

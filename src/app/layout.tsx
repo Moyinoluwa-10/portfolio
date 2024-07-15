@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import siteConfig from "@/configs/site-config.json";
+import Providers from "./providers";
+import { recursive } from "./font";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -50,8 +52,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="font-re">{children}</body>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${recursive.variable}`}
+    >
+      <body className="font-recursive">
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
