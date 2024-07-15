@@ -27,7 +27,7 @@ const ThemeSwitcher = () => {
     return (
       <FiSun
         onClick={() => setTheme("light")}
-        className="text-2xl shadow-[0px_0px_12px_0px_rgba(255,255,255,1)] rounded-full cursor-pointer"
+        className="text-2xl shadow-[0px_0px_12px_0px_rgba(255,255,255,0.5)] rounded-full cursor-pointer"
       />
     );
   }
@@ -36,7 +36,7 @@ const ThemeSwitcher = () => {
     return (
       <FiMoon
         onClick={() => setTheme("dark")}
-        className="text-2xl shadow-[0px_0px_12px_0px_rgba(255,255,255,1)] rounded-full cursor-pointer"
+        className="text-2xl shadow-[0px_0px_12px_0px_rgba(11,11,28,0.5)] rounded-full cursor-pointer"
       />
     );
   }
