@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <main>
+    <div>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum facilis
       placeat voluptate cum error quam blanditiis voluptatibus veniam maxime
       accusamus omnis non dignissimos eveniet, consequatur officiis sequi
@@ -107,7 +107,7 @@ const Home = () => {
       eaque nisi natus eveniet accusamus cupiditate nam adipisci fugit dicta
       eligendi provident? Rerum eius, aspernatur commodi similique error dolorum
       perferendis modi?
-    </main>
+    </div>
   );
 };
 

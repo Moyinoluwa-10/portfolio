@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-accent-1: 227 234 234;
+  }
+
+  :root[class~="dark"] {
+    --color-accent-1: 210 218 218;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
