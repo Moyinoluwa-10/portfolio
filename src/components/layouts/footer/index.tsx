@@ -25,7 +25,9 @@ const Footer = () => {
     <footer className="bg-alt-4 p-5 text-black dark:text-primary-100">
       <div className="container text-xs font-medium">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-8">
-          <Logo />
+          <Link href="/">
+            <Logo />
+          </Link>
           <Links
             data={[
               { name: "Certification", path: "#" },

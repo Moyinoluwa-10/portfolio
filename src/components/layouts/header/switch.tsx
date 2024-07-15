@@ -24,11 +24,21 @@ const ThemeSwitcher = () => {
     );
 
   if (resolvedTheme === "dark") {
-    return <FiSun onClick={() => setTheme("light")} className="text-2xl" />;
+    return (
+      <FiSun
+        onClick={() => setTheme("light")}
+        className="text-2xl shadow-[0px_0px_12px_0px_rgba(255,255,255,1)] rounded-full cursor-pointer"
+      />
+    );
   }
 
   if (resolvedTheme === "light") {
-    return <FiMoon onClick={() => setTheme("dark")} className="text-2xl" />;
+    return (
+      <FiMoon
+        onClick={() => setTheme("dark")}
+        className="text-2xl shadow-[0px_0px_12px_0px_rgba(255,255,255,1)] rounded-full cursor-pointer"
+      />
+    );
   }
 };
 
