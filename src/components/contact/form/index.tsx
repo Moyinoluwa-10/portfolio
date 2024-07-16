@@ -23,7 +23,6 @@ const ContactForm = () => {
           firstName: Yup.string().required("Required"),
           lastName: Yup.string().required("Required"),
           message: Yup.string().required("Required"),
-          companyName: Yup.string().required("Required"),
           email: Yup.string()
             .email("Invalid email address")
             .required("Required"),
@@ -37,11 +36,13 @@ const ContactForm = () => {
           }),
         })}
         onSubmit={async (values, { setSubmitting, resetForm }) => {
-          const toastId = toast.loading("Sending your request...", {
+          console.log("submitting form", values);
+
+          const toastId = toast.loading("Submitting form...", {
             position: "top-right",
           });
           try {
-            const response = await fetch("/api/waitlist", {
+            const response = await fetch("/api/contact", {
               method: "POST",
               headers: {
                 "Content-type": "application/json",

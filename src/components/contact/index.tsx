@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <>
       <div className="px-5 py-16">
-        <div className="container grid lg:grid-cols-2 gap-10 font-semibold text-black dark:text-primary-100">
+        <div className="container grid lg:grid-cols-2 gap-14 font-semibold text-black dark:text-primary-100">
           <div>
             <div className="pb-6 border-b-[3px] border-accent-1 dark:border-alt-4 mb-8">
               <h3 className="mb-4 text-2xl text-[#131313] dark:text-white ">
