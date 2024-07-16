@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import "../styles/layout.css";
+@import "../styles/button.css";
 
 @layer base {
   :root {
