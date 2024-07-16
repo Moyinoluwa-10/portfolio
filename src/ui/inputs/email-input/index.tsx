@@ -9,13 +9,13 @@ export const EmailInput = ({ label, ...props }: TextInputProps) => {
       {label && (
         <label
           htmlFor={props.name}
-          className="block font-medium text-black dark:text-primary-100 mb-2"
+          className="block font-semibold text-black dark:text-primary-100 mb-2"
         >
           {label}
         </label>
       )}
       <input
-        className="block w-full rounded-lg px-4 py-[10px] bg-accent-1 dark:bg-alt-4 text-black dark:text-primary-100"
+        className="block w-full rounded-lg px-4 py-[10px] bg-accent-1 dark:bg-alt-4 text-black dark:text-primary-100 outline-none"
         type="email"
         {...field}
         {...props}

@@ -21,14 +21,20 @@
   }
 }
 
-html.dark {
+html {
+  color: #0b1c1c;
   background-color: #ffffff;
 }
 
 html.dark {
+  color: #ffffff;
   background-color: #0b1c1c;
 }
 
 html:has(section[role="modal"][data-open="true"]) {
   overflow: hidden;
+}
+
+.PhoneInputInput {
+  @apply outline-none bg-transparent;
 }

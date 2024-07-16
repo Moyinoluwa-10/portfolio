@@ -13,12 +13,12 @@ export const TelInput = ({
     <div>
       <label
         htmlFor={name}
-        className="block font-medium text-black dark:text-primary-100 mb-2"
+        className="block font-semibold text-black dark:text-primary-100 mb-2"
       >
         {label}
       </label>
       <PhoneInput
-        defaultCountry="NG"
+        defaultCountry="US"
         withCountryCallingCode={true}
         international={true}
         className="block w-full rounded-lg px-4 py-[10px] bg-accent-1 dark:bg-alt-4 text-black dark:text-primary-100"

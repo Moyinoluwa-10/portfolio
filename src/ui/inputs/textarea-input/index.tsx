@@ -8,13 +8,13 @@ export const TextAreaInput = ({ label, ...props }: TextAreaInputProps) => {
       {label && (
         <label
           htmlFor={props.name}
-          className="block font-medium text-black dark:text-primary-100 mb-2"
+          className="block font-semibold text-black dark:text-primary-100 mb-2"
         >
           {label}
         </label>
       )}
       <textarea
-        className="block w-full rounded-lg px-4 py-[10px] bg-accent-1 dark:bg-alt-4 text-black dark:text-primary-100 resize-none"
+        className="block w-full rounded-lg px-4 py-[10px] bg-accent-1 dark:bg-alt-4 text-black dark:text-primary-100 outline-none resize-none"
         {...field}
         {...props}
       />
