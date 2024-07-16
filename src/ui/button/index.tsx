@@ -28,13 +28,25 @@ export const Button = ({
       onClick={onClick}
       disabled={disabled}
       type={type ? type : "button"}
-      className={`btn-primary group  ${className} ${
-        inactive ? "bg-white text-black pointer-events-none opacity-60" : ""
+      className={`btn-primary group ${className ? className : ""} ${
+        inactive ? "bg-white text-black/60 pointer-events-none" : ""
       }`}
     >
-      <span className="span--1 group-disabled:bg-[#FAD4A6]"></span>
-      <span className="span--2 group-disabled:bg-[#E7EBF0]"></span>
-      <span className="span--3 group-disabled:bg-[#B1EFD8]"></span>
+      <span
+        className={`span--1 group-disabled:bg-[#FAD4A6] ${
+          inactive ? "opacity-60" : ""
+        }`}
+      ></span>
+      <span
+        className={`span--2 group-disabled:bg-[#E7EBF0] ${
+          inactive ? "opacity-60" : ""
+        }`}
+      ></span>
+      <span
+        className={`span--3 group-disabled:bg-[#B1EFD8] ${
+          inactive ? "opacity-60" : ""
+        }`}
+      ></span>
       {children}
     </button>
   );
