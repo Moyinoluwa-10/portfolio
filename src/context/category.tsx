@@ -38,7 +38,7 @@ export function CategoryProvider({ children }: Props) {
     if (!localStorage.getItem("category")) {
       setCategory("engineer");
     }
-  }, []);
+  }, [category]);
 
   const setCategoryToEngineer = () => {
     setCategory("engineer");
