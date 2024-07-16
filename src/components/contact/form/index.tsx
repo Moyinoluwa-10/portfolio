@@ -6,6 +6,20 @@ import { isPossiblePhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import { Button, Input, Inputs } from "@/ui";
 import { TelInput } from "@/ui/inputs/tel-input";
+import supabase from "@/lib/supabaseClient";
+
+interface ValueProps {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phoneNumber: string;
+  message: string;
+}
+
+const addContactInfoToDb = async (values: ValueProps) => {
+  const { error } = await supabase.from("contact").insert({ ...values });
+  return error;
+};
 
 const ContactForm = () => {
   return (
@@ -36,8 +50,6 @@ const ContactForm = () => {
           }),
         })}
         onSubmit={async (values, { setSubmitting, resetForm }) => {
-          console.log("submitting form", values);
-
           const toastId = toast.loading("Submitting form...", {
             position: "top-right",
           });
@@ -57,7 +69,16 @@ const ContactForm = () => {
               return;
             }
             const data = await response.json();
-            if (data.code === 200) {
+            const err = await addContactInfoToDb(values);
+            if (err) {
+              toast.error("An error occurred", {
+                id: toastId,
+              });
+              setSubmitting(false);
+              return;
+            }
+
+            if (data.status) {
               toast.success(data.message, {
                 id: toastId,
               });

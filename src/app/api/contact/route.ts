@@ -1,24 +1,20 @@
-import { ContactEmail } from "@/templates/email";
-import { Resend } from "resend";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(req: Request) {
   try {
-    const value = await req.json();
+    console.log("POST");
 
-    const { data, error } = await resend.emails.send({
-      from: "Moyinoluwa Adelowo <moyinadelowo@gmail.com>",
-      to: [value.email],
-      subject: "Thank You for Reaching Out!",
-      react: ContactEmail({ firstName: value.firstName }),
-    });
-
-    if (error) {
-      return Response.json({ error }, { status: 500 });
-    }
-
-    return Response.json(data);
+    const data = await req.json();
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/v0/send-email`,
+      {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }
+    );
+    const response = await res.json();
+    return Response.json(response);
   } catch (error) {
     return Response.json({ error }, { status: 500 });
   }
