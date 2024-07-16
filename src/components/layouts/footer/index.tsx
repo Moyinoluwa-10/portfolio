@@ -10,7 +10,7 @@ interface LinksProps {
 
 const Links = ({ data }: LinksProps) => {
   return (
-    <nav className="flex items-center gap-16">
+    <nav className="flex items-center justify-center gap-x-16 gap-y-5 flex-wrap">
       {data.map(({ name, path }, index) => (
         <span key={index}>
           <Link href={path}>{name}</Link>
