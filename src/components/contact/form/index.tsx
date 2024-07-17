@@ -99,8 +99,8 @@ const ContactForm = () => {
         }}
       >
         {({ isSubmitting, values, handleChange, errors, touched }) => (
-          <Form className="grid gap-8">
-            <div className="grid md:grid-cols-2 gap-8">
+          <Form className="grid gap-5 md:gap-8">
+            <div className="grid md:grid-cols-2 gap-5 md:gap-8">
               <Input
                 type={Inputs.text}
                 name="firstName"

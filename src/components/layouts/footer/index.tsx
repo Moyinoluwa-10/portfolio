@@ -30,9 +30,9 @@ const Footer = () => {
           </Link>
           <Links
             data={[
-              { name: "Certification", path: "#" },
-              { name: "Blog", path: "#" },
-              { name: "Activities", path: "#" },
+              { name: "Certifications", path: "/activities#certification" },
+              // { name: "Blog", path: "/activities#blog" },
+              { name: "Activities", path: "/activities" },
             ]}
           />
         </div>

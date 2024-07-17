@@ -15,15 +15,15 @@ const Contact = () => {
         <div className="container grid lg:grid-cols-2 gap-14 font-semibold text-black dark:text-primary-100">
           <div>
             <div className="pb-6 border-b-[3px] border-accent-1 dark:border-alt-4 mb-8">
-              <h3 className="mb-4 text-2xl text-[#131313] dark:text-white ">
+              <h3 className="mb-4 text-xl md:text-2xl text-[#131313] dark:text-white ">
                 Get in touch
               </h3>
-              <p className="mb-6 text-black dark:text-primary-100">
+              <p className="mb-6 text-black dark:text-primary-100 text-sm md:text-base">
                 I would love to hear from you, let me build for you
               </p>
               <div className="flex items-center justify-between gap-x-10 gap-y-5 flex-wrap">
                 <Button variant="secondary">Schedule a call</Button>
-                <div className="flex items-center gap-8 text-2xl">
+                <div className="flex items-center gap-8 text-xl md:text-2xl">
                   <Link href="https://github.com/Moyinoluwa-10" target="_blank">
                     <FiGithub />
                   </Link>
@@ -47,15 +47,15 @@ const Contact = () => {
               alt="contact image"
               className="mb-8 hidden lg:block"
             />
-            <div>
+            <div className="text-sm md:text-base">
               <div className="flex items-center gap-4 mb-5">
-                <FiMail />
+                <FiMail className="text-xl md:text-2xl" />
                 <Link href="mailto:moyinadelowo@gmail.com">
                   moyinadelowo@gmail.com
                 </Link>
               </div>
               <div className="flex items-center gap-4">
-                <FiPhone />
+                <FiPhone className="text-xl md:text-2xl" />
                 <Link href="tel:+12197073354">+1 219 707 3354</Link>
               </div>
             </div>
@@ -71,7 +71,7 @@ const Contact = () => {
         <Image
           src={contactBannerDark}
           alt="contact banner"
-          className="w-full hidden dark:md:block lg:hidden"
+          className="w-full hidden dark:md:block dark:lg:hidden"
         />
       </div>
     </>
