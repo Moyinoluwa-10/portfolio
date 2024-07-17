@@ -59,11 +59,11 @@ const MobileSocialLinks = () => {
   );
 };
 
-export const MobileNav = () => {
+export const MobileNav = ({ onToggle }: { onToggle: () => void }) => {
   return (
     <div className="flex flex-col items-center gap-16 font-medium">
       {links.map(({ name, path }, index) => (
-        <Link key={index} href={path}>
+        <Link key={index} href={path} onClick={onToggle}>
           {name}
         </Link>
       ))}

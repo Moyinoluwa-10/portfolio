@@ -32,7 +32,7 @@ const Header = () => {
         role="modal"
         data-open={menuIsOpen}
       >
-        <MobileNav />
+        <MobileNav onToggle={handleToggleMenu} />
       </section>
     </header>
   );
