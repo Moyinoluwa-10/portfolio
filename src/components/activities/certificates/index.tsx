@@ -1,7 +1,10 @@
+'use client'
 import { CERTIFICATES } from "@/constants/activities/certificates";
 import Card from "./card";
 
 const Certificates = () => {
+  const [show, setShow] = useState(false);
+
   return (
     <div className="mb-16">
       <h3 className="text-2xl font-semibold mb-8 text-[#131313] dark:text-white">
@@ -16,6 +19,7 @@ const Certificates = () => {
           />
         ))}
       </div>
+      <CertificateOverlay
     </div>
   );
 };

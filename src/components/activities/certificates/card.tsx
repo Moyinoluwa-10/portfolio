@@ -2,8 +2,8 @@ import Image, { StaticImageData } from "next/image";
 
 const Card = ({ title, image }: { title: string; image: StaticImageData }) => {
   return (
-    <div className="bg-black text-white dark:bg-primary-100 dark:text-black font-semibold text-sm md:text-xl rounded-xl overflow-hidden">
-      <Image src={image} alt="image" className="w-full" />
+    <div className="bg-black text-white dark:bg-primary-100 dark:text-black font-semibold text-sm md:text-xl rounded-xl overflow-hidden" onClick={() => }>
+      <Image src={image} alt="image" className="w-full md:aspect-[5/4]" />
       <p className="p-3">{title}</p>
     </div>
   );
