@@ -2,7 +2,7 @@ import certOne from "@/assets/images/contact/contact.png";
 
 export const ACTIVITIES = [
   {
-    title: "Certificate of Completion",
+    title: "TMCF Devcon 2024",
     image: certOne,
   },
   {
