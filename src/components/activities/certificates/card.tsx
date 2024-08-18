@@ -1,12 +1,36 @@
+"use client";
+import { useState } from "react";
 import Image, { StaticImageData } from "next/image";
+import CertificateOverlay from "./overlay";
 
-const Card = ({ title, image }: { title: string; image: StaticImageData }) => {
+interface CertificateCardProps {
+  title: string;
+  image: StaticImageData;
+}
+
+const CertificateCard = ({ title, image }: CertificateCardProps) => {
+  const [show, setShow] = useState(false);
+  const handleClose = () => {
+    setShow(false);
+  };
+  const handleOpen = () => {
+    setShow(true);
+  };
+
   return (
-    <div className="bg-black text-white dark:bg-primary-100 dark:text-black font-semibold text-sm md:text-xl rounded-xl overflow-hidden" onClick={() => }>
-      <Image src={image} alt="image" className="w-full md:aspect-[5/4]" />
+    <div className="bg-black text-white dark:bg-primary-100 dark:text-black font-semibold text-sm md:text-xl rounded-xl overflow-hidden">
+      <div className="overflow-hidden">
+        <Image
+          src={image}
+          alt="image"
+          className="w-full h-full object-cover transition-all duration-300 hover:scale-125 hover:grayscale-0 cursor-pointer"
+          onClick={handleOpen}
+        />
+      </div>
       <p className="p-3">{title}</p>
+      <CertificateOverlay image={image} show={show} onClose={handleClose} />
     </div>
   );
 };
 
-export default Card;
+export default CertificateCard;
