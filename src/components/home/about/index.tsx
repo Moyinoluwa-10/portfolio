@@ -1,6 +1,10 @@
 import Image from "next/image";
-import displayPicture from "@/assets/images/contact/contact.png";
 import { Button } from "@/ui";
+import Link from "next/link";
+// import Experience from "./experience";
+import SkillsAndTools from "./skills";
+import DownloadResume from "./resume";
+import picture from "@/assets/images/home/picture.jpg";
 
 const About = () => {
   return (
@@ -8,30 +12,11 @@ const About = () => {
       <div className="container grid lg:grid-cols-[400px_1fr] gap-16 text-black dark:text-accent-1 font-semibold">
         <div className="flex flex-col md:flex-row lg:flex-col gap-8">
           <Image
-            src={displayPicture}
+            src={picture}
             alt="profile image"
-            className="w-full max-w-80 mb-8"
+            className="w-full max-w-80 mb-8 rounded-lg"
           />
-          <div>
-            <div className="mb-16">
-              <h4 className="text-2xl mb-8">Skills</h4>
-              <ul className="flex flex-col gap-4 list-disc list-inside">
-                <li>Engineering Drawing</li>
-                <li>Problem Solving</li>
-                <li>Interpersonal and teamwork skills.</li>
-                <li>Arduino Programming</li>
-              </ul>
-            </div>
-            <div className="">
-              <h4 className="text-2xl mb-8">Skills</h4>
-              <ul className="flex flex-col gap-4 list-disc list-inside">
-                <li>Engineering Drawing</li>
-                <li>Problem Solving</li>
-                <li>Interpersonal and teamwork skills.</li>
-                <li>Arduino Programming</li>
-              </ul>
-            </div>
-          </div>
+          <SkillsAndTools />
         </div>
 
         <div>
@@ -40,84 +25,48 @@ const About = () => {
               Hello, my name is Moyinoluwa Adelowo
             </h3>
             <p className="mb-8 text-sm md:text-base">
-              Lorem ipsum dolor sit amet consectetur. Pharetra sed sodales
-              molestie amet augue ac. Integer etiam A curious and
-              creativeMechanical Engineering scholar interested in mechanical
-              design, manufacturing, automation, and software engineering. I am
-              currently seeking an internship opportunity, am open to
-              relocation, and am available for similar rolesSuspendisse rhoncus
-              libero vitae est urna nullam luctus. Nec gravida arcu egestas
-              donec bibendum.Lorem ipsum dolor sit amet consectetur. Pharetra
-              sed sodales molestie amet augue ac. Integer etiam non etiam et
-              adipiscing est. Suspendisse rhoncus libero vitae est urna nullam
-              luctus. Nec gravida arcu egestas donec bibendum.L orem ipsum dolor
-              sit amet consectetur. Pharetra sed sodales molestie amet augue ac.
-              Integer etiam non etiam et adipiscing est. Suspendisse rhoncus
-              libero vitae est urna nullam luctus. Nec gravida arcu egestas
-              donec bibendum.Lorem ipsum dolor sit amet consectetur. Pharetra
-              sed sodales molestie amet augue{" "}
+              I'm Moyinoluwa Adelowo, a Mechanical Engineering major with a
+              Computer Science minor. Beyond my academic pursuits, I'm a
+              full-stack developer well-versed in both front-end and back-end
+              development. I utilize the MERN stack (MongoDB, ExpressJS, React,
+              NodeJS) to create dynamic web solutions. My learning journey
+              extends to Python and C++ as I continually expand my coding
+              repertoire. <br />
+              With a knack for crafting professional websites, I am a dedicated
+              and ambitious Techpreneur. I love playing soccer and ping-pong in
+              my free time. My passion lies in leveraging technology to tackle
+              real-world challenges, with a strong commitment to leaving a
+              lasting mark on the tech landscape through meaningful
+              contributions.
             </p>
             <div className="flex items-center gap-x-16 gap-y-8 flex-wrap">
-              <Button variant="secondary">Download Resume</Button>
-              <Button variant="secondary">Hire Me</Button>
-              <Button variant="secondary">Contact</Button>
+              <DownloadResume />
+              {/* <Button variant="secondary">Hire Me</Button> */}
+              <Link href={"/contact"}>
+                <Button variant="secondary">Contact</Button>
+              </Link>
             </div>
           </div>
 
           <div className="mb-16">
             <h3 className="text-xl md:text-2xl mb-4">Education</h3>
+            <h5 className="text-lg md:text-xl mb-5">
+              Alabama A&M University - Bsc. Mechanical Engineering <br />
+              <span className="text-secondary">August 2023 - May 2027</span>
+            </h5>
+            <h5 className="text-lg md:text-xl mb-5">
+              TechWise by TalentSprint - Software Engineering <br />
+              <span className="text-secondary">
+                March 2024 - September 2025
+              </span>
+            </h5>
             <h5 className="text-lg md:text-xl">
-              Alabama Agricultural & Mechanical University - Bsc. Mechanical
-              Engineering <br />
-              <span className="text-secondary">May 2019 - August 2021</span>
+              AltSchool Africa - Diploma, Software Engineering <br />
+              <span className="text-secondary">April 2022 - June 2023</span>
             </h5>
           </div>
 
-          <div>
-            <h3 className="text-xl md:text-2xl mb-4">Experience</h3>
-            <h5 className="text-lg md:text-xl mb-4">
-              Alabama Agricultural & Mechanical University - Bsc. Mechanical
-              Engineering <br />
-              <span className="text-secondary">May 2019 - August 2021</span>
-            </h5>
-            <ul className="flex flex-col gap-4 list-disc list-inside text-sm md:text-base">
-              <li>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Tempore quod ex quis aut id voluptatibus vero magni dolores enim
-                dolorum dolorem harum fugiat, nulla voluptatum ab adipisci amet.
-                Delectus temporibus enim sint eum dolorum dolor. Numquam illo
-                suscipit officia deserunt omnis laboriosam, voluptate fuga cum
-                magni magnam fugiat illum debitis.
-              </li>
-              <li>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Eveniet perferendis quos debitis, nesciunt iusto perspiciatis
-                repellat praesentium itaque. Quasi, provident dolorem? Labore ad
-                quae delectus ipsam fugiat amet cumque ratione, fugit eos
-                debitis possimus pariatur quaerat rem facere. Minus nobis,
-                deserunt facilis nesciunt et incidunt error sequi maiores ullam
-                repudiandae.
-              </li>
-              <li>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                voluptatum rem praesentium perferendis, sint sed rerum! Eius,
-                debitis fugit aspernatur natus doloribus velit, earum eveniet
-                accusamus odit ab aliquid rerum repellendus deserunt quidem illo
-                veritatis dolores mollitia incidunt maxime officia labore
-                praesentium non alias? Molestiae mollitia quod eaque inventore
-                iure.
-              </li>
-              <li>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi,
-                doloremque. Id nihil doloremque corporis eos maiores eaque,
-                deserunt ullam corrupti asperiores deleniti natus libero, qui
-                error! Aspernatur a aperiam, dignissimos, repellat nulla
-                reiciendis qui incidunt porro accusamus aliquid rem dolore
-                commodi nemo error distinctio praesentium. Quos vero dicta illo
-                velit.
-              </li>
-            </ul>
-          </div>
+          {/* <Experience /> */}
         </div>
       </div>
     </div>
