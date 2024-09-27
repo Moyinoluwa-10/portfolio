@@ -19,8 +19,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@google/model-viewer": "^3.5.0",
     "@supabase/supabase-js": "^2.44.4",
     "formik": "^2.4.6",
+    "gsap": "^3.12.5",
     "next": "14.2.5",
     "next-themes": "^0.3.0",
     "react": "^18",
