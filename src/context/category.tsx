@@ -57,10 +57,8 @@ export function CategoryProvider({ children }: Props) {
   };
 
   return (
-    <>
-      <CategoryContext.Provider value={value}>
-        {children}
-      </CategoryContext.Provider>
-    </>
+    <CategoryContext.Provider value={value}>
+      {children}
+    </CategoryContext.Provider>
   );
 }

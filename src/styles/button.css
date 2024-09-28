@@ -1,5 +1,5 @@
 .btn-primary {
-  @apply relative px-16 py-[10px] rounded-[30px] border border-black/20 font-semibold text-base md:text-lg overflow-hidden  z-[2] transition-all duration-300 bg-primary text-white disabled:bg-[#7A7F7F] disabled:pointer-events-none disabled:cursor-not-allowed disabled:mix-blend-plus-darker active:bg-[#173837] hover:bg-primary/90 hover:mix-blend-plus-darker;
+  @apply relative px-10 sm:px-16 py-[10px] rounded-[30px] border border-black/20 font-semibold text-base md:text-lg overflow-hidden  z-[2] transition-all duration-300 bg-primary text-white disabled:bg-[#7A7F7F] disabled:pointer-events-none disabled:cursor-not-allowed disabled:mix-blend-plus-darker active:bg-[#173837] hover:bg-primary/90 hover:mix-blend-plus-darker;
 }
 
 .btn-primary .span--1 {

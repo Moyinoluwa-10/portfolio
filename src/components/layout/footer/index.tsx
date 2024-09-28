@@ -30,14 +30,14 @@ const Footer = () => {
           </Link>
           <Links
             data={[
-              { name: "Certifications", path: "/activities#certification" },
-              // { name: "Blog", path: "/activities#blog" },
+              { name: "Projects", path: "/projects" },
               { name: "Activities", path: "/activities" },
             ]}
           />
         </div>
         <p className="text-center">
-          &copy; 2024. Developed by Moyin, Designed by @belikeoscar
+          &copy; {new Date().getFullYear()}. Developed by Moyin, Designed by
+          @belikeoscar
         </p>
       </div>
     </footer>

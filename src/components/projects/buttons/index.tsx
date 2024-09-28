@@ -13,12 +13,11 @@ const Buttons = () => {
   if (!mounted) return null;
 
   return (
-    <div className="flex items-center justify-center gap-5 mb-16">
+    <div className="flex flex-wrap items-center justify-center gap-5 mb-16">
       <Button
         inactive={category === "developer"}
         onClick={() => {
           setCategoryToDeveloper();
-          console.log("Changing category to developer");
         }}
       >
         Developer
@@ -27,7 +26,6 @@ const Buttons = () => {
         inactive={category === "engineer"}
         onClick={() => {
           setCategoryToEngineer();
-          console.log("Changing category to engineer");
         }}
       >
         Engineer

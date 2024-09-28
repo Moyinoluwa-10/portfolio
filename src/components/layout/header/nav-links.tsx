@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { FiGithub, FiTwitter } from "react-icons/fi";
 import { AiOutlineLinkedin } from "react-icons/ai";
+import TransitionLink from "../transition-link";
 
 const links = [
   { name: "About", path: "/#about" },
-  { name: "Projects", path: "/#projects" },
+  { name: "Projects", path: "/projects" },
   { name: "Activities", path: "/activities" },
   { name: "Contact", path: "/contact" },
 ];
@@ -13,9 +14,9 @@ export const DesktopNav = () => {
   return (
     <nav className="font-semibold hidden lg:flex items-center gap-11">
       {links.map(({ name, path }, index) => (
-        <Link key={index} href={path}>
+        <TransitionLink key={index} href={path}>
           {name}
-        </Link>
+        </TransitionLink>
       ))}
     </nav>
   );
