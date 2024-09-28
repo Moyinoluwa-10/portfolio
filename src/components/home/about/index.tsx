@@ -24,7 +24,7 @@ const About = () => {
             <h3 className="text-xl md:text-2xl mb-4">
               Hello, my name is Moyinoluwa Adelowo
             </h3>
-            <p className="mb-8 text-sm md:text-base">
+            <p className="mb-8 text-sm md:text-base font-normal">
               I'm Moyinoluwa Adelowo, a Mechanical Engineering major with a
               Computer Science minor. Beyond my academic pursuits, I'm a
               full-stack developer well-versed in both front-end and back-end
@@ -42,8 +42,8 @@ const About = () => {
             <div className="flex items-center gap-x-16 gap-y-8 flex-wrap">
               <DownloadResume />
               {/* <Button variant="secondary">Hire Me</Button> */}
-              <Link href={"/contact"}>
-                <Button variant="secondary">Contact</Button>
+              <Link href={"/projects"}>
+                <Button variant="secondary">View Projects</Button>
               </Link>
             </div>
           </div>
@@ -51,7 +51,7 @@ const About = () => {
           <div className="mb-16">
             <h3 className="text-xl md:text-2xl mb-4">Education</h3>
             <h5 className="text-lg md:text-xl mb-5">
-              Alabama A&M University - Bsc. Mechanical Engineering <br />
+              Alabama A&M University - B.Sc. Mechanical Engineering <br />
               <span className="text-secondary">August 2023 - May 2027</span>
             </h5>
             <h5 className="text-lg md:text-xl mb-5">
@@ -65,8 +65,6 @@ const About = () => {
               <span className="text-secondary">April 2022 - June 2023</span>
             </h5>
           </div>
-
-          {/* <Experience /> */}
         </div>
       </div>
     </div>

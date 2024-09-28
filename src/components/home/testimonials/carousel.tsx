@@ -2,7 +2,7 @@
 import Card from "./card";
 import { TESTIMONIALS } from "@/constants/home/testimonial";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, A11y } from "swiper/modules";
+import { Pagination, A11y, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { CSSProperties } from "react";
@@ -11,7 +11,7 @@ const Carousel = () => {
   return (
     <div>
       <Swiper
-        modules={[Pagination, A11y]}
+        modules={[Pagination, A11y, Autoplay]}
         slidesPerView={1}
         spaceBetween={30}
         breakpoints={{
@@ -21,6 +21,7 @@ const Carousel = () => {
           },
         }}
         pagination={{ clickable: true }}
+        autoplay={{ delay: 5000 }}
         style={
           {
             "--swiper-pagination-color": "#1AFFA8",

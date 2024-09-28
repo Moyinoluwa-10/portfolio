@@ -1,4 +1,4 @@
-import magnus from "@/assets/images/home/magnus-egerstedt.png";
+import magnus from "@/assets/images/home/magnus-egerstedt.jpg";
 import samuel from "@/assets/images/home/samuel-adewuyi.jpg";
 // import ed from "@/assets/images/home/ed-pearson.jpg";
 

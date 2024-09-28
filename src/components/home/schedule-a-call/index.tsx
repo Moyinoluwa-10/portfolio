@@ -11,7 +11,9 @@ const ScheduleACall = () => {
           know more?
         </p>
         <div className="flex items-center justify-center gap-x-16 gap-y-8 flex-wrap">
-          <Button>Schedule a call</Button>
+          <Link href={"/contact"}>
+            <Button>Contact Me</Button>
+          </Link>
           <Link href="/activities">
             <Button variant="secondary">View Activities</Button>
           </Link>
