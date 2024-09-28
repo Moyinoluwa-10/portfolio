@@ -11,6 +11,8 @@ const DownloadResume = () => {
   const { category } = useCategory();
   const resolvedCategory = category as CategoryType;
 
+  if (!mounted) return null;
+
   return (
     <div>
       {resolvedCategory === "engineer" && (

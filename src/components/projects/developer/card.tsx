@@ -20,7 +20,7 @@ export default function Card({
   liveLink,
 }: CardProps) {
   return (
-    <div className="bg-black text-white dark:bg-primary-100 dark:text-black text-sm md:text-xl rounded-xl overflow-hidden group transition-all duration-300">
+    <div className="bg-black text-white dark:bg-primary-100 dark:text-black border-2 border-black dark:border-primary-100 rounded-xl overflow-hidden group transition-all duration-300">
       <div className="w-full overflow-hidden">
         <Image
           src={image}
@@ -29,8 +29,8 @@ export default function Card({
         />
       </div>
       <div className="px-5 py-7">
-        <h3 className="uppercase mb-3 font-semibold">{title}</h3>
-        <p className="mb-5">{description}</p>
+        <h3 className="uppercase mb-3 font-semibold text-xl">{title}</h3>
+        <p className="mb-5 text-sm md:text-lg">{description}</p>
         <div className="flex flex-wrap items-center gap-3 mb-5">
           {toolsUsed.map((tools, index) => {
             return (

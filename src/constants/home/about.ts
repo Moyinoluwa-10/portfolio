@@ -1,5 +1,3 @@
-import { FaHtml5 } from "react-icons/fa6";
-
 export const ABOUTLIST = {
   engineer: {
     skills: ["Mechanical Design", "Simulation", "Manufacturing", "3D-Printing"],
@@ -26,7 +24,7 @@ export const ABOUTLIST = {
     ],
   },
   developer: {
-    skills: ["Full-stack development", "Project Management", "DevOps"],
+    skills: ["Full-stack development", "Project Management"],
     tools: [],
     experience: [
       {

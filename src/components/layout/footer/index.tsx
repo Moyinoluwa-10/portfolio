@@ -23,7 +23,7 @@ const Links = ({ data }: LinksProps) => {
 const Footer = () => {
   return (
     <footer className="bg-alt-4 p-5 text-black dark:text-primary-100">
-      <div className="container text-xs font-medium">
+      <div className="container text-xs font-semibold">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-8">
           <Link href="/">
             <Logo />

@@ -14,7 +14,7 @@ export default function Projects() {
   if (!mounted) return null;
 
   return (
-    <div className="pt-28 pb-16">
+    <div className="pt-28 pb-24">
       <div className="px-5">
         <div className="container mb-10">
           <h1 className="font-semibold text-2xl mb-6">Projects</h1>

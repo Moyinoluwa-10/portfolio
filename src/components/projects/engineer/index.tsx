@@ -15,7 +15,7 @@ export default function EngineerProjects() {
             className={`cursor-pointer transition-all duration-200 ${
               project === "adjustable-ramp"
                 ? "text-alt-2 scale-125"
-                : "scale-100"
+                : "scale-100 hover:text-alt-2"
             }`}
             onClick={() => setProject("adjustable-ramp")}
           >
@@ -23,7 +23,9 @@ export default function EngineerProjects() {
           </span>
           <span
             className={`cursor-pointer transition-all duration-200 ${
-              project === "fixed-ramp" ? "text-alt-2 scale-125" : "scale-100"
+              project === "fixed-ramp"
+                ? "text-alt-2 scale-125"
+                : "scale-100 hover:text-alt-2"
             }`}
             onClick={() => setProject("fixed-ramp")}
           >
@@ -31,7 +33,9 @@ export default function EngineerProjects() {
           </span>
           <span
             className={`cursor-pointer transition-all duration-200 ${
-              project === "bike-frame" ? "text-alt-2 scale-125" : "scale-100"
+              project === "bike-frame"
+                ? "text-alt-2 scale-125"
+                : "scale-100 hover:text-alt-2"
             }`}
             onClick={() => setProject("bike-frame")}
           >

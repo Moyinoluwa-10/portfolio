@@ -58,7 +58,7 @@ export const DEVELOPERPROJECTS = [
       "Platinum Beam Concept is a cleaning service based in Nigeria, has undergone a remarkable transformation from its humble beginnings to becoming a leading luxury cleaning service provider.",
     image: platinum,
     liveLink: "https://www.platinumbeamconcept.com/",
-    toolsUsed: ["React,js", "Node.js", "Javascript", "MongoDB"],
+    toolsUsed: ["React.js", "Node.js", "Javascript", "MongoDB"],
   },
   {
     title: "Gain Africa",

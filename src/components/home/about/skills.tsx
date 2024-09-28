@@ -46,18 +46,18 @@ const SkillsAndTools = () => {
 
   return (
     <div>
-      <div className="mb-16">
-        <h4 className="text-2xl mb-8">Skills</h4>
-        <ul className="flex flex-col gap-4 list-disc list-inside">
+      <div className="mb-6">
+        <h4 className="text-2xl mb-2">Skills</h4>
+        <ul className="flex flex-col gap-2 list-disc list-inside font-normal">
           {skills.map((skill, index) => (
             <li key={index}>{skill}</li>
           ))}
         </ul>
       </div>
       <div className="">
-        <h4 className="text-2xl mb-8">Tools</h4>
+        <h4 className="text-2xl mb-2">Tools</h4>
         {resolvedCategory === "engineer" && (
-          <ul className="flex flex-col gap-4 list-disc list-inside">
+          <ul className="flex flex-col gap-2 list-disc list-inside font-normal">
             {tools.map((tool, index) => (
               <li key={index}>{tool}</li>
             ))}
