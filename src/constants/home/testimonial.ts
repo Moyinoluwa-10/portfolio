@@ -1,6 +1,6 @@
 import magnus from "@/assets/images/home/magnus-egerstedt.png";
 import samuel from "@/assets/images/home/samuel-adewuyi.jpg";
-import ed from "@/assets/images/home/ed-pearson.jpg";
+// import ed from "@/assets/images/home/ed-pearson.jpg";
 
 export const TESTIMONIALS = [
   {
@@ -17,11 +17,11 @@ export const TESTIMONIALS = [
       "I highly recommend Moyinoluwa, who has been an exceptional Frontend Team Lead at Stellar Eminence. His expertise in Software development, combined with his leadership and problem-solving skills, has significantly contributed to the success of our projects. Any company or team would greatly benefit from his technical abilities and dedication to delivering top-notch results.",
     image: samuel,
   },
-  {
-    name: "Ed Pearson",
-    title: "Assistant Professor, Alabama A&M University",
-    quote:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: ed,
-  },
+  // {
+  //   name: "Ed Pearson",
+  //   title: "Assistant Professor, Alabama A&M University",
+  //   quote:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  //   image: ed,
+  // },
 ];
