@@ -3,8 +3,8 @@ import "./globals.css";
 import siteConfig from "@/configs/site-config.json";
 import Providers from "./providers";
 import { recursive } from "./font";
-import Header from "@/components/layouts/header";
-import Footer from "@/components/layouts/footer";
+import Header from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -59,10 +59,10 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${recursive.variable}`}
     >
-      <body className="font-recursive">
+      <body className="font-recursive min-h-screen flex flex-col">
         <Providers>
           <Header />
-          <main>{children}</main>
+          <main className="flex-grow">{children}</main>
           <Footer />
         </Providers>
       </body>

@@ -1,7 +1,5 @@
 import Activities from "@/components/activities";
 
-const page = () => {
+export default function Page() {
   return <Activities />;
-};
-
-export default page;
+}
