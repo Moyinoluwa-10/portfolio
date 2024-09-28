@@ -4,7 +4,7 @@ import { Logo } from "@/ui";
 import { DesktopNav, DesktopSocialLinks, MobileNav } from "./nav-links";
 import Hamburger from "./hamburger";
 import ThemeSwitcher from "./switch";
-import TransitionLink from "../transition-link";
+import Link from "next/link";
 
 const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -13,9 +13,9 @@ const Header = () => {
   return (
     <header className="bg-accent-1 dark:bg-primary text-black dark:text-primary-100 px-5 py-4">
       <div className="container flex items-center justify-between">
-        <TransitionLink href="/">
+        <Link href="/">
           <Logo />
-        </TransitionLink>
+        </Link>
         <DesktopNav />
         <div className="flex items-center gap-20">
           <DesktopSocialLinks />
