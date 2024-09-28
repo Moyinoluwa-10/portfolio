@@ -1,8 +1,13 @@
-import "@google/model-viewer";
+"use client";
 import Image from "next/image";
 import image1 from "@/assets/images/projects/bike.png";
+import { useEffect } from "react";
 
 export default function BikeFrame() {
+  useEffect(() => {
+    import("@google/model-viewer").catch(console.error);
+  }, []);
+
   return (
     <div className="pt-12 pb-16">
       <div className="container px-5 text-black dark:text-primary-100">

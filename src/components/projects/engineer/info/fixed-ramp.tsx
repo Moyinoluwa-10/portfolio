@@ -1,9 +1,15 @@
-import "@google/model-viewer";
+"use client";
+// import "@google/model-viewer";
 import Image from "next/image";
 import image1 from "@/assets/images/projects/ramp-1.png";
 import image2 from "@/assets/images/projects/ramp-2.jpg";
+import { useEffect } from "react";
 
 export default function FixedRamp() {
+  useEffect(() => {
+    import("@google/model-viewer").catch(console.error);
+  }, []);
+
   return (
     <div className="pt-12 pb-16">
       <div className="container px-5 text-black dark:text-primary-100">

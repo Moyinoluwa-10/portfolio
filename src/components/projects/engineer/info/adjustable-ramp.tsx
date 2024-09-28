@@ -1,8 +1,13 @@
-import "@google/model-viewer";
+"use client";
 import image2 from "@/assets/images/projects/adjustable-ramp-2.png";
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function AdjustableRamp() {
+  useEffect(() => {
+    import("@google/model-viewer").catch(console.error);
+  }, []);
+
   return (
     <div className="pt-12 pb-16">
       <div className="container px-5 text-black dark:text-primary-100">
