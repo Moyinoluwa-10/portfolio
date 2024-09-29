@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <>
+    <div>
       <div className="px-5 py-16">
         <div className="container grid lg:grid-cols-2 gap-14 font-semibold text-black dark:text-primary-100">
           <div>
@@ -74,7 +74,7 @@ const Contact = () => {
           className="w-full hidden dark:md:block dark:lg:hidden"
         />
       </div>
-    </>
+    </div>
   );
 };
 

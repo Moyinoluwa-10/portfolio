@@ -16,14 +16,14 @@ interface ValueProps {
   message: string;
 }
 
-// const addContactInfoToDb = async (values: ValueProps) => {
-//   const { error } = await supabase.from("contact").insert({ ...values });
-//   return error;
-// };
+const addContactInfoToDb = async (values: ValueProps) => {
+  const { error } = await supabase.from("contact").insert({ ...values });
+  return error;
+};
 
 const ContactForm = () => {
   return (
-    <>
+    <div>
       <Toaster />
       <Formik
         initialValues={{
@@ -69,14 +69,14 @@ const ContactForm = () => {
               return;
             }
             const data = await response.json();
-            // const err = await addContactInfoToDb(values);
-            // if (err) {
-            //   toast.error("An error occurred", {
-            //     id: toastId,
-            //   });
-            //   setSubmitting(false);
-            //   return;
-            // }
+            const err = await addContactInfoToDb(values);
+            if (err) {
+              toast.error("An error occurred", {
+                id: toastId,
+              });
+              setSubmitting(false);
+              return;
+            }
 
             if (data.status) {
               toast.success(data.message, {
@@ -154,7 +154,7 @@ const ContactForm = () => {
           </Form>
         )}
       </Formik>
-    </>
+    </div>
   );
 };
 
