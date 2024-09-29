@@ -1,7 +1,7 @@
 import ActivitiesList from "./activities";
 import Certificates from "./certificates";
 
-const Activities = () => {
+export default function Activities() {
   return (
     <div className="px-5 pt-28 pb-16">
       <div className="container">
@@ -10,6 +10,4 @@ const Activities = () => {
       </div>
     </div>
   );
-};
-
-export default Activities;
+}

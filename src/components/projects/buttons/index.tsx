@@ -3,7 +3,7 @@ import { useCategory } from "@/context/category";
 import { Button } from "@/ui";
 import { useEffect, useState } from "react";
 
-const Buttons = () => {
+export default function Buttons() {
   const [mounted, setMounted] = useState(false);
   const { category, setCategoryToDeveloper, setCategoryToEngineer } =
     useCategory();
@@ -32,6 +32,4 @@ const Buttons = () => {
       </Button>
     </div>
   );
-};
-
-export default Buttons;
+}

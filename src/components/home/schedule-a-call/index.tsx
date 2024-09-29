@@ -1,7 +1,7 @@
 import { Button } from "@/ui";
 import Link from "next/link";
 
-const ScheduleACall = () => {
+export default function ScheduleACall() {
   return (
     <div className="px-5 py-16">
       <div className="container">
@@ -21,6 +21,4 @@ const ScheduleACall = () => {
       </div>
     </div>
   );
-};
-
-export default ScheduleACall;
+}

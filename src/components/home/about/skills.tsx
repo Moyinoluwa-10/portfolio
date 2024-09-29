@@ -35,7 +35,7 @@ const IconContainer = ({ icon }: { icon: React.ReactElement }) => {
   );
 };
 
-const SkillsAndTools = () => {
+export default function SkillsAndTools() {
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
   const { category } = useCategory();
@@ -89,6 +89,4 @@ const SkillsAndTools = () => {
       </div>
     </div>
   );
-};
-
-export default SkillsAndTools;
+}

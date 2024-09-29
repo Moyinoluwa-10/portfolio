@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { CSSProperties } from "react";
 
-const Carousel = () => {
+export default function Carousel() {
   return (
     <div>
       <Swiper
@@ -39,6 +39,4 @@ const Carousel = () => {
       </Swiper>
     </div>
   );
-};
-
-export default Carousel;
+}

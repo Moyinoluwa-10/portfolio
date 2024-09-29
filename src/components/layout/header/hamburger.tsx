@@ -3,7 +3,7 @@ interface HamburgerProps {
   onToggle: () => void;
 }
 
-const Hamburger = ({ menuIsOpen, onToggle }: HamburgerProps) => {
+export default function Hamburger({ menuIsOpen, onToggle }: HamburgerProps) {
   return (
     <div
       className={`hamburger cursor-pointer relative z-50 lg:hidden ${
@@ -16,6 +16,4 @@ const Hamburger = ({ menuIsOpen, onToggle }: HamburgerProps) => {
       <span className="bar block w-5 h-[2px] ml-auto bg-black dark:bg-primary-100 rounded-3xl"></span>
     </div>
   );
-};
-
-export default Hamburger;
+}

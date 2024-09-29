@@ -1,6 +1,6 @@
 import Buttons from "./buttons";
 
-const Hero = () => {
+export default function Hero() {
   return (
     <div className="min-h-[calc(100vh-90px)] dark:bg-black dark:text-primary-100 px-5 py-10 font-semibold flex flex-col">
       <div className="container grid items-center flex-grow">
@@ -13,6 +13,4 @@ const Hero = () => {
       </div>
     </div>
   );
-};
-
-export default Hero;
+}

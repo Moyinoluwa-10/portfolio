@@ -7,7 +7,7 @@ interface CardProps {
   image: StaticImageData;
 }
 
-const Card = ({ name, title, quote, image }: CardProps) => {
+export default function Card({ name, title, quote, image }: CardProps) {
   return (
     <div className="text-black dark:text-primary-100 flex flex-col sm:flex-row gap-8 max-w-2xl">
       <div>
@@ -24,6 +24,4 @@ const Card = ({ name, title, quote, image }: CardProps) => {
       <p>{quote}</p>
     </div>
   );
-};
-
-export default Card;
+}

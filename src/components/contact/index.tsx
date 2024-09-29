@@ -1,4 +1,3 @@
-import { Button } from "@/ui";
 import Link from "next/link";
 import { FiGithub, FiMail, FiPhone, FiTwitter } from "react-icons/fi";
 import { AiOutlineLinkedin } from "react-icons/ai";
@@ -8,7 +7,7 @@ import contactBannerLight from "@/assets/images/contact/contact-banner-light.png
 import contactBannerDark from "@/assets/images/contact/contact-banner-dark.png";
 import Image from "next/image";
 
-const Contact = () => {
+export default function Contact() {
   return (
     <div>
       <div className="px-5 py-16">
@@ -76,6 +75,4 @@ const Contact = () => {
       </div>
     </div>
   );
-};
-
-export default Contact;
+}

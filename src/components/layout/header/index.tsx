@@ -6,7 +6,7 @@ import Hamburger from "./hamburger";
 import ThemeSwitcher from "./switch";
 import Link from "next/link";
 
-const Header = () => {
+export default function Header() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const handleToggleMenu = () => setMenuIsOpen((curr) => !curr);
 
@@ -36,6 +36,4 @@ const Header = () => {
       </section>
     </header>
   );
-};
-
-export default Header;
+}

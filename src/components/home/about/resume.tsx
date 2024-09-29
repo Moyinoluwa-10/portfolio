@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 type CategoryType = "developer" | "engineer";
 
-const DownloadResume = () => {
+export default function DownloadResume() {
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
   const { category } = useCategory();
@@ -33,6 +33,4 @@ const DownloadResume = () => {
       )}
     </div>
   );
-};
-
-export default DownloadResume;
+}

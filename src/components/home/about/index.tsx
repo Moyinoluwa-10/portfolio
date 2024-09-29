@@ -6,7 +6,7 @@ import SkillsAndTools from "./skills";
 import DownloadResume from "./resume";
 import picture from "@/assets/images/home/picture.jpg";
 
-const About = () => {
+export default function About() {
   return (
     <div className="px-5 pt-24 pb-16" id="about">
       <div className="container grid lg:grid-cols-[400px_1fr] gap-16 text-black dark:text-accent-1 font-semibold">
@@ -68,6 +68,4 @@ const About = () => {
       </div>
     </div>
   );
-};
-
-export default About;
+}

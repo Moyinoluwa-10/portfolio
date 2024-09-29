@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 
-const ThemeSwitcher = () => {
+export default function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);
   const { setTheme, resolvedTheme } = useTheme();
 
@@ -40,6 +40,4 @@ const ThemeSwitcher = () => {
       />
     );
   }
-};
-
-export default ThemeSwitcher;
+}

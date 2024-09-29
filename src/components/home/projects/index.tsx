@@ -1,7 +1,7 @@
 import { PROJECTS } from "@/constants/projects/projects";
 import Card from "./card";
 
-const Projects = () => {
+export default function Projects() {
   return (
     <div className="mb-16 px-5 pt-14 pb-16" id="projects">
       <div className="container">
@@ -16,6 +16,4 @@ const Projects = () => {
       </div>
     </div>
   );
-};
-
-export default Projects;
+}

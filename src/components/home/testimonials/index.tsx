@@ -1,6 +1,6 @@
 import Carousel from "./carousel";
 
-const Testimonials = () => {
+export default function Testimonials() {
   return (
     <div className="px-5 py-16 bg-alt-4">
       <div className="container">
@@ -11,6 +11,4 @@ const Testimonials = () => {
       </div>
     </div>
   );
-};
-
-export default Testimonials;
+}

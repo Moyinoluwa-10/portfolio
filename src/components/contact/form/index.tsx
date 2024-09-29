@@ -21,7 +21,7 @@ const addContactInfoToDb = async (values: ValueProps) => {
   return error;
 };
 
-const ContactForm = () => {
+export default function ContactForm() {
   return (
     <div>
       <Toaster />
@@ -38,7 +38,10 @@ const ContactForm = () => {
           lastName: Yup.string().required("Required"),
           message: Yup.string().required("Required"),
           email: Yup.string()
-            .email("Invalid email address")
+            .matches(
+              /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+              "Invalid email address"
+            )
             .required("Required"),
           phoneNumber: Yup.string().test((value, ctx) => {
             if (!value) {
@@ -156,6 +159,4 @@ const ContactForm = () => {
       </Formik>
     </div>
   );
-};
-
-export default ContactForm;
+}

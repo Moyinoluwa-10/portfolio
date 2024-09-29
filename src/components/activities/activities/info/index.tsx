@@ -1,7 +1,7 @@
 import imageOne from "@/assets/images/contact/contact.png";
 import Image from "next/image";
 
-const ActivityInfo = () => {
+export default function ActivityInfo() {
   return (
     <div className="px-5 pt-12 pb-16">
       <div className="container font-semibold text-black dark:text-primary-100">
@@ -56,6 +56,4 @@ const ActivityInfo = () => {
       </div>
     </div>
   );
-};
-
-export default ActivityInfo;
+}

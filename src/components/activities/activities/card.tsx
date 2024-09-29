@@ -9,7 +9,7 @@ interface CardProps {
   description?: string[];
 }
 
-const Card = ({ title, image, description }: CardProps) => {
+export default function Card({ title, image, description }: CardProps) {
   const [show, setShow] = useState(false);
   const handleClose = () => {
     setShow(false);
@@ -37,6 +37,4 @@ const Card = ({ title, image, description }: CardProps) => {
       />
     </div>
   );
-};
-
-export default Card;
+}

@@ -20,7 +20,7 @@ const Links = ({ data }: LinksProps) => {
   );
 };
 
-const Footer = () => {
+export default function Footer() {
   return (
     <footer className="bg-alt-4 p-5 text-black dark:text-primary-100">
       <div className="container text-xs font-semibold">
@@ -42,6 +42,4 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

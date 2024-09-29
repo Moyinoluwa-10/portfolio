@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 type CategoryType = "developer" | "engineer";
 
-const Experience = () => {
+export default function Experience() {
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
   const { category } = useCategory();
@@ -32,6 +32,4 @@ const Experience = () => {
       ))}
     </div>
   );
-};
-
-export default Experience;
+}
