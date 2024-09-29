@@ -1,7 +1,7 @@
 import { CERTIFICATES } from "@/constants/activities/certificates";
 import CertificateCard from "./card";
 
-const Certificates = () => {
+export default function Certificates() {
   return (
     <div className="mb-16">
       <h3 className="text-2xl font-semibold mb-8 text-[#131313] dark:text-white">
@@ -19,6 +19,4 @@ const Certificates = () => {
       </div>
     </div>
   );
-};
-
-export default Certificates;
+}

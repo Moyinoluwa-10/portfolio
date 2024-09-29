@@ -1,17 +1,17 @@
 {
-  "name": "moyinadelowo",
+  "name": "portfolio",
   "description": "This is the portfolio website for Moyinoluwa Adelowo",
   "version": "0.1.0",
   "private": true,
   "author": "Moyinoluwa Adelowo <moyinadelowo@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Moyinoluwa-10/moyinadelowo.git"
+    "url": "https://github.com/Moyinoluwa-10/portfolio.git"
   },
   "bugs": {
-    "url": "https://github.com/Moyinoluwa-10/moyinadelowo/issues"
+    "url": "https://github.com/Moyinoluwa-10/portfolio/issues"
   },
-  "homepage": "https://github.com/Moyinoluwa-10/moyinadelowo",
+  "homepage": "https://github.com/Moyinoluwa-10/portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

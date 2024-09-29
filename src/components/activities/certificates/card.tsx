@@ -8,7 +8,10 @@ interface CertificateCardProps {
   image: StaticImageData;
 }
 
-const CertificateCard = ({ title, image }: CertificateCardProps) => {
+export default function CertificateCard({
+  title,
+  image,
+}: CertificateCardProps) {
   const [show, setShow] = useState(false);
   const handleClose = () => {
     setShow(false);
@@ -18,11 +21,11 @@ const CertificateCard = ({ title, image }: CertificateCardProps) => {
   };
 
   return (
-    <div className="bg-black text-white dark:bg-primary-100 dark:text-black font-semibold text-sm md:text-xl rounded-xl overflow-hidden">
+    <div className="bg-black text-white dark:bg-primary-100 dark:text-black font-semibold text-base md:text-xl rounded-xl overflow-hidden">
       <div className="overflow-hidden">
         <Image
           src={image}
-          alt="image"
+          alt={title}
           className="w-full h-full object-cover transition-all duration-300 hover:scale-125 hover:grayscale-0 cursor-pointer"
           onClick={handleOpen}
         />
@@ -31,6 +34,4 @@ const CertificateCard = ({ title, image }: CertificateCardProps) => {
       <CertificateOverlay image={image} show={show} onClose={handleClose} />
     </div>
   );
-};
-
-export default CertificateCard;
+}
