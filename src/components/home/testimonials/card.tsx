@@ -16,7 +16,7 @@ const Card = ({ name, title, quote, image }: CardProps) => {
           alt="image"
           className="rounded-2xl max-w-52 aspect-square mx-auto sm:mx-0"
         />
-        <div className="text-center md:text-left">
+        <div className="text-center sm:text-left">
           <h3 className="mb-1 mt-4 font-semibold">{name}</h3>
           <p className="text-sm">{title}</p>
         </div>
