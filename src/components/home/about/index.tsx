@@ -25,19 +25,18 @@ const About = () => {
               Hello, my name is Moyinoluwa Adelowo
             </h3>
             <p className="mb-8 text-sm md:text-base font-normal">
-              I'm Moyinoluwa Adelowo, a Mechanical Engineering major with a
-              Computer Science minor. Beyond my academic pursuits, I'm a
-              full-stack developer well-versed in both front-end and back-end
-              development. I utilize the MERN stack (MongoDB, ExpressJS, React,
-              NodeJS) to create dynamic web solutions. My learning journey
-              extends to Python and C++ as I continually expand my coding
-              repertoire. <br />
-              With a knack for crafting professional websites, I am a dedicated
-              and ambitious Techpreneur. I love playing soccer and ping-pong in
-              my free time. My passion lies in leveraging technology to tackle
-              real-world challenges, with a strong commitment to leaving a
-              lasting mark on the tech landscape through meaningful
-              contributions.
+              I am a passionate Mechanical Engineering and Software engineering
+              student with a keen interest in robotics, mechanical design and
+              production, software engineering, and problem-solving. I've worked
+              on various projects, from building full-stack web applications and
+              AI-powered platforms to designing robotic systems in research
+              environments. I thrive in collaborative settings where innovative
+              solutions and hands-on technical work intersect. <br /> <br /> I
+              love playing soccer and ping-pong in my free time. My goal is to
+              leverage technology to tackle real-world challenges, with a strong
+              commitment to leaving a lasting mark on the tech landscape through
+              meaningful contributions. Let's connect and discuss how to work
+              together to create something great!
             </p>
             <div className="flex items-center gap-x-16 gap-y-8 flex-wrap">
               <DownloadResume />
