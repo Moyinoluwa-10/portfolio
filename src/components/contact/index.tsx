@@ -21,8 +21,8 @@ const Contact = () => {
               <p className="mb-6 text-black dark:text-primary-100 text-sm md:text-base">
                 I would love to hear from you, let me build for you
               </p>
-              <div className="flex items-center justify-between gap-x-10 gap-y-5 flex-wrap">
-                <Button variant="secondary">Schedule a call</Button>
+              <div className="flex items-center justify-end gap-x-10 gap-y-5">
+                {/* <Button variant="secondary">Schedule a call</Button> */}
                 <div className="flex items-center gap-8 text-xl md:text-2xl">
                   <Link href="https://github.com/Moyinoluwa-10" target="_blank">
                     <FiGithub />
