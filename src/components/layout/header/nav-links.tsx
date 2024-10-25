@@ -3,9 +3,9 @@ import { FiGithub, FiTwitter } from "react-icons/fi";
 import { AiOutlineLinkedin } from "react-icons/ai";
 
 const links = [
-  { name: "About", path: "/#about" },
+  // { name: "About", path: "/#about" },
   { name: "Projects", path: "/projects" },
-  { name: "Activities", path: "/activities" },
+  // { name: "Activities", path: "/activities" },
   { name: "Contact", path: "/contact" },
 ];
 

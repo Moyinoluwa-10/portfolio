@@ -31,7 +31,7 @@ export default function Footer() {
           <Links
             data={[
               { name: "Projects", path: "/projects" },
-              { name: "Activities", path: "/activities" },
+              // { name: "Activities", path: "/activities" },
             ]}
           />
         </div>

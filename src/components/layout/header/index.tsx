@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <header className="bg-accent-1 dark:bg-primary text-black dark:text-primary-100 px-5 py-4">
       <div className="container flex items-center justify-between">
-        <Link href="/">
+        <Link href="/" className="relative z-50">
           <Logo />
         </Link>
         <DesktopNav />

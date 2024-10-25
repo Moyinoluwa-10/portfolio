@@ -1,4 +1,3 @@
-import certOne from "@/assets/images/contact/contact.png";
 import catalog from "@/assets/images/projects/catalog.png";
 import bub from "@/assets/images/projects/bub.png";
 import gain from "@/assets/images/projects/gain.png";
@@ -7,23 +6,34 @@ import platinum from "@/assets/images/projects/platinum.png";
 import stellar from "@/assets/images/projects/stellar.png";
 import varena from "@/assets/images/projects/varena.png";
 import frontendMentor from "@/assets/images/projects/frontend-mentor.png";
+import bike from "@/assets/images/projects/bike.png";
+import adjustableRamp from "@/assets/images/projects/adjustable-ramp-1.png";
 
-export const PROJECTS = [
+export const FEATUREDPROJECTS = [
   {
-    title: "Certificate of Completion",
-    image: certOne,
+    title: "Cat-A-Log",
+    image: catalog,
+    description:
+      "Cat-A-Log is a web app that leverages AI to scan images of cats, analyze their patterns and characteristics, and generate digital trading cards based on rarity.",
   },
   {
-    title: "Certificate of Completion",
-    image: certOne,
+    title: "Bike Frame Design",
+    image: bike,
+    description:
+      "This bike frame was designed using SolidWorks, following step-by-step tutorial to achieve a robust and functional design.",
   },
   {
-    title: "Certificate of Completion",
-    image: certOne,
+    title: "Bub it",
+    description:
+      "A URL shortener web application that helps you to shorten your long URLs, customize them, generate QR codes, and share them.",
+    image: bub,
   },
   {
-    title: "Certificate of Completion",
-    image: certOne,
+    title: "Adjustable Ramp",
+    image: adjustableRamp,
+    description:
+      "This adjustable ramp was meticulously designed and 3D-printed to test the maximum incline angle at which a robot can move upwards without tipping over. ",
+    category: "Enginner",
   },
 ];
 

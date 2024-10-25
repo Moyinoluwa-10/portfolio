@@ -62,7 +62,7 @@ export default function RootLayout({
       <body className="font-recursive min-h-screen flex flex-col">
         <Providers>
           <Header />
-          <main className="flex-grow">{children}</main>
+          <main className="flex-grow flex flex-col">{children}</main>
           <Footer />
         </Providers>
       </body>
