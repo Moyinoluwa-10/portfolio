@@ -15,22 +15,12 @@ export default function DownloadResume() {
 
   return (
     <div>
-      {resolvedCategory === "engineer" && (
-        <a
-          href="Moyinoluwa_Adelowo_Resume_ME.pdf"
-          download={"Moyinoluwa_Adelowo_Resume"}
-        >
-          <Button variant="secondary">Download Resume</Button>
-        </a>
-      )}
-      {resolvedCategory === "developer" && (
-        <a
-          href="Moyinoluwa_Adelowo_Resume_CS.pdf"
-          download={"Moyinoluwa_Adelowo_Resume"}
-        >
-          <Button variant="secondary">Download Resume</Button>
-        </a>
-      )}
+      <a
+        href="/Moyinoluwa_Adelowo_Resume.pdf"
+        download={"Moyinoluwa_Adelowo_Resume"}
+      >
+        <Button variant="secondary">Download Resume</Button>
+      </a>
     </div>
   );
 }

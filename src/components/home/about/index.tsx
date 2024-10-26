@@ -8,7 +8,7 @@ import picture from "@/assets/images/home/picture.jpg";
 
 export default function About() {
   return (
-    <div className="px-5 pt-24 pb-16" id="about">
+    <div className="px-5 pt-24 pb-10" id="about">
       <div className="container grid lg:grid-cols-[400px_1fr] gap-5 md:gap-16 text-black dark:text-accent-1 font-semibold">
         <div className="flex flex-col md:flex-row lg:flex-col gap-8">
           <Image
