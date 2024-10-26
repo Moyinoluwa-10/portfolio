@@ -14,9 +14,9 @@ export default function ScheduleACall() {
           <Link href={"/contact"}>
             <Button>Contact Me</Button>
           </Link>
-          <Link href="/activities">
+          {/* <Link href="/activities">
             <Button variant="secondary">View Activities</Button>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
