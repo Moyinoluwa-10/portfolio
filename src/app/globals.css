@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "../styles/layout.css";
+@import "../styles/button.css";
+
+@layer base {
+  :root {
+    --color-accent-1: 227 234 234;
+  }
+
+  :root[class~="dark"] {
+    --color-accent-1: 210 218 218;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+html {
+  color: #0b1c1c;
+  background-color: #ffffff;
+}
+
+html.dark {
+  color: #ffffff;
+  background-color: #0b1c1c;
+}
+
+html:has(section[role="modal"][data-open="true"]) {
+  overflow: hidden;
+}
+
+.PhoneInputInput {
+  @apply outline-none bg-transparent;
+}
